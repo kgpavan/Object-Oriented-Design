@@ -1,0 +1,30 @@
+Operation #1:
+   Processor 1 is busy
+   Processor 2 is busy
+   Processor 3 is busy
+   Processor 1 is busy
+   Processor 2 is busy
+   Processor 3 is busy
+   Processor 1 is busy
+Processor 2 - IR
+
+Operation #2:
+   Processor 1 is busy
+   Processor 2 is busy
+Processor 3 - IR
+
+Operation #3:
+   Processor 1 is busy
+   Processor 2 is busy
+Processor 3 - LS
+
+Operation #4:
+   Processor 1 is busy
+Processor 2 - IR
+
+Operation #5:
+   Processor 1 is busy
+Processor 2 - LS
+
+Operation #6:
+Processor 1 - LS

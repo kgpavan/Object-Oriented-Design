@@ -1,0 +1,25 @@
+Design a musical juke box using object oriented principles. 
+
+
+Let’s first understand the basic system components:
+
+- CD player
+- CD
+- Display () (displays length of song, remaining time and playlist) 
+
+
+Now, let’s break this down further:
+
+- Playlist creation (includes add, delete, shuffle etc sub functionalities) CD selector
+- Track selector
+- Queueing up a song
+- Get next song from the playlist
+
+
+A user can also be introduced 
+
+- Adding 
+- Deleting 
+- Credit info
+
+How do we group this functionality based on Objects (data + functions which go together)?

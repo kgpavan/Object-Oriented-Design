@@ -1,0 +1,3 @@
+1-false  2-true  3-false  4-true  5-false  6-true  7-false  8-true
+Iterator:    8 8  6 6  4 4  2 2
+Enumeration: 8  6  4  2

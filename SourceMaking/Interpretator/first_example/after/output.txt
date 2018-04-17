@@ -1,0 +1,14 @@
+celsius * 9 / 5 + thirty
+celsius 9 * 5 / thirty +
+celsius 3*3 9.0 2/2 5.0 1+1 thirty
+C is 0,  F is 30.0
+C is 10,  F is 48.0
+C is 20,  F is 66.0
+C is 30,  F is 84.0
+C is 40,  F is 102.0
+C is 50,  F is 120.0
+C is 60,  F is 138.0
+C is 70,  F is 156.0
+C is 80,  F is 174.0
+C is 90,  F is 192.0
+C is 100,  F is 210.0

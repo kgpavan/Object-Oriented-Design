@@ -1,0 +1,7 @@
+>java PrototypeDemo Garbage AlphaVersion BetaVersion Nothing ReleaseCandidate
+
+Garbage: doesn't exist
+Nothing: doesn't exist
+AlphaVersion: does something
+BetaVersion: does something
+ReleaseCandidate: does real work

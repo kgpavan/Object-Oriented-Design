@@ -1,0 +1,5 @@
+after move:  origin is (0.0,0.0), end is (3.0,3.0)
+  PointPolar is [4.242640687119285@90.0]
+after rotate: origin is (0.0,0.0), end is (2.5978681687064796E-16,4.242640687119285)
+  PointPolar is [0.9999779997579947@60.000727780827376]
+30 degrees to 60 degrees: origin is (2.0,1.0), end is (2.499977999677324,1.8660127018922195)

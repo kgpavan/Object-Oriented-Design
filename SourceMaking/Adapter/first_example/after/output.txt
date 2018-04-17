@@ -1,0 +1,2 @@
+Rectangle with coordinate left-down point (10;20), width: 20, height: 40
+Line from point A(10;20), to point B(30;60)

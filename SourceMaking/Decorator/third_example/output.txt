@@ -1,0 +1,4 @@
+TextField: 80, 24
+  ScrollDecorator
+  BorderDecorator
+  BorderDecorator

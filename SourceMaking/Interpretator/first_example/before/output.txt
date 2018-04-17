@@ -1,0 +1,13 @@
+Infix:   C * 9 / 5 + 32
+Postfix: C 9 * 5 / 32 +
+C is 0,  F is 32.0
+C is 10,  F is 50.0
+C is 20,  F is 68.0
+C is 30,  F is 86.0
+C is 40,  F is 104.0
+C is 50,  F is 122.0
+C is 60,  F is 140.0
+C is 70,  F is 158.0
+C is 80,  F is 176.0
+C is 90,  F is 194.0
+C is 100,  F is 212.0

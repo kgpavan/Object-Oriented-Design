@@ -1,0 +1,9 @@
+if args = 0
+"short"  "lie"  "old"
+"my way, or the highway"
+"take test, deal with the results"
+
+if args > 0
+"vertically challenged"  "factually inaccurate"  "chronologically gifted"
+"do it your way, any way, or no way"
+"you pass, self-esteem intact"

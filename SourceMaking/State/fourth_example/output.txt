@@ -1,0 +1,14 @@
+Tom landed on Boardwalk - not owned
+Tom does not have enough money to purchase
+Tom has 50 dollars
+   Dick landed on Boardwalk - not owned
+   Dick bought Boardwalk
+   Dick has 400 dollars
+Tom landed on Boardwalk - owned by    Dick
+   Dick now has 410 dollars
+Tom has 40 dollars
+   Dick landed on Boardwalk - owned by    Dick
+   Dick has 410 dollars
+Tom landed on Boardwalk - owned by    Dick
+   Dick now has 420 dollars
+Tom has 30 dollars

@@ -1,0 +1,8 @@
+A + ack = A
+A + off = B
+error
+B + off = C
+C + on  = B
+error
+B + on  = A
+A + on  = C
