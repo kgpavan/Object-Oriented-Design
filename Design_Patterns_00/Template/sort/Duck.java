@@ -1,6 +1,7 @@
 package design.design_patterns.templateMethod.sort;
 
 public class Duck implements Comparable<Duck> {
+
 	String name;
 	int weight;
   
