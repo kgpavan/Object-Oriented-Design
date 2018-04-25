@@ -1,0 +1,17 @@
+Press 'Enter'
+   low speed
+Press 'Enter'
+   medium speed
+Press 'Enter'
+   high speed
+Press 'Enter'
+   turning off
+Press 'Enter'
+   low speed
+Press 'Enter'
+   medium speed
+Press 'Enter'
+   high speed
+Press 'Enter'
+   turning off
+Press 'Enter'

@@ -1,0 +1,7 @@
+PASSWORD: secret
+INPUT:    the quick brown fox
+encrypt:
+main:     oc`xlpd^fe]mjrizajs
+PASSWORD: secret
+decrypt:
+Output:   the quick brown fox

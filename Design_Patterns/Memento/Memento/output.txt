@@ -1,0 +1,7 @@
+Originator: Setting state to State1
+Originator: Setting state to State2
+Originator: Saving to Memento.
+Originator: Setting state to State3
+Originator: Saving to Memento.
+Originator: Setting state to State4
+Originator: State after restoring from Memento: State3

@@ -1,0 +1,5 @@
+>java PrototypeFactory tom dick jack
+
+Tom
+Dick
+Prototype with name: jack, doesn't exist

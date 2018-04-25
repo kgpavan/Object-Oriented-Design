@@ -21,6 +21,29 @@ ENCAPSULATION, INHERITANCE, POLYMORPHISM AND ABSTRACTION
 
 
 
+————————————————————————————————————————————————————————————————————————————————————
+SOLID DESIGN PRINCIPLES 
+———————————————————————
+
+
+IN COMPUTER PROGRAMMING, SOLID (SINGLE RESPONSIBILITY, OPEN-CLOSED, LISKOV SUBSTITUTION, INTERFACE SEGREGATION AND DEPENDENCY INVERSION) IS A MNEMONIC ACRONYM INTRODUCED BY MICHAEL FEATHERS FOR THE "FIRST FIVE PRINCIPLES" NAMED BY ROBERT C. MARTIN IN THE EARLY 2000S[3] THAT STANDS FOR FIVE BASIC PRINCIPLES OF OBJECT-ORIENTED PROGRAMMING AND DESIGN. THE INTENTION IS THAT THESE PRINCIPLES, WHEN APPLIED TOGETHER, WILL MAKE IT MORE LIKELY THAT A PROGRAMMER WILL CREATE A SYSTEM THAT IS EASY TO MAINTAIN AND EXTEND OVER TIME.[3] THE PRINCIPLES OF SOLID ARE GUIDELINES THAT CAN BE APPLIED WHILE WORKING ON SOFTWARE TO REMOVE CODE SMELLS BY PROVIDING A FRAMEWORK THROUGH WHICH THE PROGRAMMER MAY REFACTOR THE SOFTWARE'S SOURCE CODE UNTIL IT IS BOTH LEGIBLE AND EXTENSIBLE. IT IS PART OF AN OVERALL STRATEGY OF AGILE AND ADAPTIVE SOFTWARE DEVELOPMENT.
+
+	
+1. SINGLE RESPONSIBILITY PRINCIPLE (S)
+A CLASS SHOULD HAVE ONLY A SINGLE RESPONSIBILITY (I.E. ONLY ONE POTENTIAL CHANGE IN THE SOFTWARE'S SPECIFICATION SHOULD BE ABLE TO AFFECT THE SPECIFICATION OF THE CLASS)
+
+2. OPEN/ CLOSE PRINCIPLE (O)
+“SOFTWARE ENTITIES … SHOULD BE OPEN FOR EXTENSION, BUT CLOSED FOR MODIFICATION.”
+
+3. LISKOV SUBSTITUTION PRINCIPLE (L)
+“OBJECTS IN A PROGRAM SHOULD BE REPLACEABLE WITH INSTANCES OF THEIR SUBTYPES WITHOUT ALTERING THE CORRECTNESS OF THAT PROGRAM.” SEE ALSO DESIGN BY CONTRACT.
+
+4. INTERFACE SEGREGATION PRINCIPLE (I)
+“MANY CLIENT-SPECIFIC INTERFACES ARE BETTER THAN ONE GENERAL-PURPOSE INTERFACE.”
+
+5. DEPENDENCY INVERSION PRINCIPLE (D)
+ONE SHOULD DEPEND UPON ABSTRACTIONS, [NOT] CONCRETIONS.
+————————————————————————————————————————————————————————————————————————————————————
 
 
 
@@ -293,81 +316,6 @@ COMMAND–QUERY SEPARATION (CQRS) DESIGN // CONTRACT (DBC) METHODOLOGY
 
 
 
-SOFTWARE DESIGN AND ARCHITECTURE COURSES
-————————————————————————————————————————
-
-
-BASICS OF SOFTWARE ARCHITECTURE & DESIGN PATTERNS IN JAVA - UDEMY
-
-EXPERIENCE DESIGN PATTERNS IN JAVA - UDEMY
-
-JAVA DESIGN PATTERNS AND ARCHITECTURE - UDEMY/ JOHN PURCELL
-
-FROM 0 TO 1: DESIGN PATTERNS - 24 THAT MATTER IN JAVA - UDEMY/ LOONY CRON
-
-BYTE SIZE CHUNKS : JAVA MODEL-VIEW-CONTROLLER (MVC) - UDEMY/ LOONY CRON
-
-SOFTWARE ARCHITECTURE & DESIGN - UDACITY
-
-SOFTWARE DEVELOPMENT PROCESS - UDACITY
-
-OBJECT ORIENTED TUTS - DEREK BANAS/ YOUTUBE 
-
-DESIGN PATTERNS - DEREK BANAS/ YOUTUBE 
-
-DZONE DESIGN PATTERNS <HTTPS://DZONE.COM/REFCARDZ/DESIGN-PATTERNS>
-
-OOP DESIGN PATTERNS <HTTPS://SOURCEMAKING.COM/>
-
-DZONE DOMAIN-DRIVEN DESIGN (DDD) <HTTPS://DZONE.COM/REFCARDZ/GETTING-STARTED-DOMAIN-DRIVEN>
-
-BEHAVIOR DRIVEN DESIGN (BDD)
-
-
-
-SOFTWARE DESIGN AND ARCHITECTURE SPECIALIZATION  - COURSERA 
-———————————————————————————————————————————————————————————
-
-
-OBJECT-ORIENTED DESIGN - UNIVERSITY OF ALBERTA / COURSERA 
-
-DESIGN PATTERNS - UNIVERSITY OF ALBERTA / COURSERA 
-
-SOFTWARE ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
-
-SERVICE-ORIENTED ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
-
-
-
-SOFTWARE ENGINEERING FOR THE WEB APPLICATIONS - MIT OPEN COURSEARE 
-
-JAVA PROGRAMMING: BUILD A RECOMMENDATION SYSTEM - COURSERA 
-
-
-
-
-BOOKS
------
-
-PATTERNS FOR PARALLEL PROGRAMMING - TIMOTHY G. MATTSON
-
-HEAD FIRST DESIGN PATTERNS
-
-HEAD FIRST OBJECT-ORIENTED DESIGN AND ANALYSIS
-
-
-
-AN INTERNAL BACKEND SYSTEM. THE SYSTEM IS DISTRIBUTED IN NATURE AND IS RESPONSIBLE FOR PROCESSING LARGE AMOUNTS OF DATA FROM MULTIPLE SOURCES VERY QUICKLY
-——————————————————————————————————————————————————————————————————————————————————
-
-
-
-
-DESIGN A LOGIN SYSTEM FOR THE WEB APPLICATION 
-
-
-
-
 
 SOFTWARE DEVELOPMENT ANTIPATTERNS
 —————————————————————————————————
@@ -621,3 +569,187 @@ BEHAVIORAL DP
 	The Visitor pattern is like a more powerful Command pattern because the visitor may initiate whatever is appropriate for the kind of object it encounters.
 
 ———————————————————————————————————————————————————————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+———————————————————————————————————————————————————————————————————————————————————————
+
+SOFTWARE DESIGN AND ARCHITECTURE COURSES
+————————————————————————————————————————
+
+
+BASICS OF SOFTWARE ARCHITECTURE & DESIGN PATTERNS IN JAVA - UDEMY
+
+EXPERIENCE DESIGN PATTERNS IN JAVA - UDEMY
+
+JAVA DESIGN PATTERNS AND ARCHITECTURE - UDEMY/ JOHN PURCELL
+
+FROM 0 TO 1: DESIGN PATTERNS - 24 THAT MATTER IN JAVA - UDEMY/ LOONY CRON
+
+BYTE SIZE CHUNKS : JAVA MODEL-VIEW-CONTROLLER (MVC) - UDEMY/ LOONY CRON
+
+SOFTWARE ARCHITECTURE & DESIGN - UDACITY
+
+SOFTWARE DEVELOPMENT PROCESS - UDACITY
+
+SOFTWARE ENGINEERING FOR THE WEB APPLICATIONS - MIT OPEN COURSEARE 
+
+JAVA PROGRAMMING: BUILD A RECOMMENDATION SYSTEM - COURSERA 
+
+OBJECT ORIENTED TUTS - DEREK BANAS/ YOUTUBE 
+
+DESIGN PATTERNS - DEREK BANAS/ YOUTUBE 
+
+DZONE DESIGN PATTERNS <HTTPS://DZONE.COM/REFCARDZ/DESIGN-PATTERNS>
+
+OOP DESIGN PATTERNS <HTTPS://SOURCEMAKING.COM/>
+
+DZONE DOMAIN-DRIVEN DESIGN (DDD) <HTTPS://DZONE.COM/REFCARDZ/GETTING-STARTED-DOMAIN-DRIVEN>
+
+BEHAVIOR DRIVEN DESIGN (BDD)
+
+
+
+SOFTWARE DESIGN AND ARCHITECTURE SPECIALIZATION  - COURSERA 
+———————————————————————————————————————————————————————————
+
+OBJECT-ORIENTED DESIGN - UNIVERSITY OF ALBERTA / COURSERA 
+
+DESIGN PATTERNS - UNIVERSITY OF ALBERTA / COURSERA 
+
+SOFTWARE ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
+
+SERVICE-ORIENTED ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
+
+
+
+
+
+OBJECT ORIENTED PROGRAMMING IN JAVA SPECIALIZATION
+——————————————————————————————————————————————————
+JAVA PROGRAMMING: SOLVING PROBLEMS WITH SOFTWARE - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+
+JAVA PROGRAMMING: ARRAYS, LISTS, AND STRUCTURED DATA - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+
+OBJECT ORIENTED PROGRAMMING IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+
+DATA STRUCTURES AND PERFORMANCE - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+
+
+
+
+
+OBJECT ORIENTED JAVA PROGRAMMING: DATA STRUCTURES AND BEYOND SPECIALIZATION
+———————————————————————————————————————————————————————————————————————————
+
+OBJECT ORIENTED PROGRAMMING IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+DATA STRUCTURES AND PERFORMANCE - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+ADVANCED DATA STRUCTURES IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+MASTERING THE SOFTWARE ENGINEERING INTERVIEW - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+CAPSTONE: ANALYZING (SOCIAL) NETWORK DATA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+
+
+
+
+BOOKS
+—————
+
+PATTERNS FOR PARALLEL PROGRAMMING - TIMOTHY G. MATTSON
+
+HEAD FIRST DESIGN PATTERNS
+
+HEAD FIRST OBJECT-ORIENTED DESIGN AND ANALYSIS
+
+
+
+
+
+
+
+
+
+
+### Q1: What is the difference between State and Strategy patterns? {#Q1}
+
+While the implementation is similar they solve different problems. The State
+pattern deals with what state an object is in - it encapsulates state-dependent
+behavior.
+The Strategy pattern deals with how an object performs a certain task - it
+encapsulates an algorithm.
+
+### Q2: What is the difference between Strategy and Template Method patterns? {#Q2}
+
+In Template Method the algorithm is chosen at compile time via inheritance.
+With Strategy pattern the algorithm is chosen at runtime via composition.
+
+### Q3: What is the difference between Proxy and Decorator patterns? {#Q3}
+
+The difference is the intent of the patterns. While Proxy controls access to
+the object Decorator is used to add responsibilities to the object.
+
+### Q4: What is the difference between Chain of Responsibility and Intercepting Filter patterns? {#Q4}
+
+While the implementations look similar there are differences. The Chain of
+Responsibility forms a chain of request processors and the processors are then
+executed one by one until the correct processor is found. In Intercepting
+Filter the chain is constructed from filters and the whole chain is always
+executed.
+
+### Q5: What is the difference between Visitor and Double Dispatch patterns? {#Q5}
+
+The Visitor pattern is a means of adding a new operation to existing classes.
+Double dispatch is a means of dispatching function calls with respect to two
+polymorphic types, rather than a single polymorphic type, which is what
+languages like C++ and Java _do not_ support directly.
+
+### Q6: What are the differences between Flyweight and Object Pool patterns? {#Q6}
+
+They differ in the way they are used.
+
+Pooled objects can simultaneously be used by a single "client" only. For that,
+a pooled object must be checked out from the pool, then it can be used by a
+client, and then the client must return the object back to the pool. Multiple
+instances of identical objects may exist, up to the maximal capacity of the
+pool.
+
+In contrast, a Flyweight object is singleton, and it can be used simultaneously
+by multiple clients.
+
+As for concurrent access, pooled objects can be mutable and they usually don't
+need to be thread safe, as typically, only one thread is going to use a
+specific instance at the same time. Flyweight must either be immutable (the
+best option), or implement thread safety.
+
+As for performance and scalability, pools can become bottlenecks, if all the
+pooled objects are in use and more clients need them, threads will become
+blocked waiting for available object from the pool. This is not the case with
+Flyweight.
+
+### Q7: What are the differences between FluentInterface and Builder patterns? {#Q7}
+
+Fluent interfaces are sometimes confused with the Builder pattern, because they share method chaining and a fluent usage. However, fluent interfaces are not primarily used to create shared (mutable) objects, but to configure complex objects without having to respecify the target object on every property change. 
+
+### Q8: What is the difference between java.io.Serialization and Memento pattern? {#Q8}
+
+Memento is typically used to implement rollback/save-point support. Example we might want to mark the state of an object at a point in time, do some work and then decide to rollback to the previous state. 
+
+On the other hand serialization may be used as a tool to save the state of an object into byte[] and preserving the contents in memory or disk. When someone invokes the memento to revert object's previous state then we can deserialize the information stored and recreate previous state. 
+
+So Memento is a pattern and serialization is a tool that can be used to implement this pattern. Other ways to implement the pattern can be to clone the contents of the object and keep track of those clones.

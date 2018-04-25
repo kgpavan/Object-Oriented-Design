@@ -1,0 +1,6 @@
+do Up on FOO
+do Up on BAR
+do Up on BAZ
+do Down on FOO
+do Down on BAR
+do Down on BAZ

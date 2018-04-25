@@ -1,0 +1,6 @@
+UpVisitor: do Up on This
+UpVisitor: generic visitObject() method
+ReflectiveVisitor: do Base on TheOther
+DownVisitor - no appropriate visit() method
+DownVisitor: do Down on That
+ReflectiveVisitor: do Base on TheOther

@@ -1,0 +1,11 @@
+FOO object calls by yourself
+FOO object was called from BAR
+FOO object was called from BAZ
+
+BAR object was called from FOO
+BAR object calls by yourself
+BAR object was called from BAZ
+
+BAZ object was called from FOO
+BAZ object was called from BAR
+BAZ object calls by yourself

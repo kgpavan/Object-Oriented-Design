@@ -1,0 +1,13 @@
+Press 'Enter'
+   turning ON
+Press 'Enter'
+   turning OFF
+Press 'Enter'
+   turning ON
+Press 'Enter'
+   turning OFF
+Press 'Enter'
+   turning ON
+Press 'Enter'
+   turning OFF
+Press 'Enter'
