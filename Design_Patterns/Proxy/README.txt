@@ -1,8 +1,8 @@
 
-
 Intent
 ------
-The Proxy Pattern (structural pattern) provides a surrogate or placeholder for another object to control access to it.Provide a surrogate or placeholder for another object to control access to it. Use an extra level of indirection to support distributed, controlled, or intelligent access. Add a wrapper and delegation to protect the real component from undue complexity.Problem You need to support resource-hungry objects, and you do not want to instantiate such objects unless and until they are actually requested by the client.
+
+The Proxy Pattern (structural pattern) provides a surrogate or placeholder for another object to control access to it. Provide a surrogate or placeholder for another object to control access to it. Use an extra level of indirection to support distributed, controlled, or intelligent access. Add a wrapper and delegation to protect the real component from undue complexity. Problem You need to support resource-hungry objects, and you do not want to instantiate such objects unless and until they are actually requested by the client.
 
 
 Discussion
@@ -15,13 +15,13 @@ Design a surrogate, or proxy, object that: instantiates the real object the firs
 COMMON Application Situations 
 -----------------------------
 
-i. A virtual proxy is a placeholder for "expensive to create" objects. The real object is only created when a client first requests/accesses the object.
+A. A VIRTUAL proxy is a placeholder for "expensive to create" objects. The real object is only created when a client first requests/accesses the object.
 
-ii. A remote proxy provides a local representative for an object that resides in a different address space. This is what the "stub" code in RPC and CORBA provides.
+B. A REMOTE proxy provides a local representative for an object that resides in a different address space. This is what the "stub" code in RPC and CORBA provides.
 
-iii. A protective proxy controls access to a sensitive master object. The "surrogate" object checks that the caller has the access permissions required prior to forwarding the request.
+C. A PROTECTIVE proxy controls access to a sensitive master object. The "surrogate" object checks that the caller has the access permissions required prior to forwarding the request.
 
-iv. A smart proxy interposes additional actions when an object is accessed. Typical uses include: 
+D. A SMART proxy interposes additional actions when an object is accessed. Typical uses include: 
 
 	Counting the number of references to the real object so that it can be freed 
 
@@ -290,3 +290,30 @@ are several common situations in which the Proxy pattern is applicable
 ## Credits
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+## Also known as Delegation or the Proxy Pattern
+
+## Intent
+It is a technique where an object expresses certain behavior to the outside but in 
+reality delegates responsibility for implementing that behaviour to an associated object. 
+
+![alt text](./etc/delegation.png "Delegate")
+
+## Applicability
+Use the Delegate pattern in order to achieve the following
+
+* Reduce the coupling of methods to their class
+* Components that behave identically, but realize that this situation can change in the future.
+
+## Credits
+
+* [Delegate Pattern: Wikipedia ](https://en.wikipedia.org/wiki/Delegation_pattern)
+* [Proxy Pattern: Wikipedia ](https://en.wikipedia.org/wiki/Proxy_pattern)
+
+----------------------------------------------------------------------------------------

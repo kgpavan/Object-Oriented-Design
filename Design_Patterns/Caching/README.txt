@@ -9,8 +9,12 @@ Use the Caching pattern(s) when
 
 * Repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead.
 
-## Credits
 
-* [Write-through, write-around, write-back: Cache explained](http://www.computerweekly.com/feature/Write-through-write-around-write-back-Cache-explained)
-* [Read-Through, Write-Through, Write-Behind, and Refresh-Ahead Caching](https://docs.oracle.com/cd/E15357_01/coh.360/e15723/cache_rtwtwbra.htm#COHDG5177)
-* [Cache-Aside](https://msdn.microsoft.com/en-us/library/dn589799.aspx)
+## Credits
+## -------
+
+[Write-through, write-around, write-back: Cache explained](http://www.computerweekly.com/feature/Write-through-write-around-write-back-Cache-explained)
+
+[Read-Through, Write-Through, Write-Behind, and Refresh-Ahead Caching](https://docs.oracle.com/cd/E15357_01/coh.360/e15723/cache_rtwtwbra.htm#COHDG5177)
+
+[Cache-Aside](https://msdn.microsoft.com/en-us/library/dn589799.aspx)

@@ -4,10 +4,8 @@ import java.util.*;
 
 public class Cafe {
 
-    private static void printMenu(Iterator iterator) {
-
+    private static void printMenu(Iterator iterator) {        
         while (iterator.hasNext()) {
-
             String menuItem = (String) iterator.next();
             System.out.println(menuItem);
         }

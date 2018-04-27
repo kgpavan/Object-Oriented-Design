@@ -1,7 +1,5 @@
 package design.design_patterns.composite.htmltags;
 
-import java.util.List;
-
 
 /*The Composite Pattern has four participants:
 ---------------------------------------------	
@@ -11,8 +9,9 @@ import java.util.List;
 4. Client
 --------------------------------------------*/
 
-public abstract class HtmlTag {
+import java.util.List;
 
+public abstract class HtmlTag {
 
     public abstract String getTagName();
 
@@ -37,4 +36,5 @@ public abstract class HtmlTag {
     public List<HtmlTag> getChildren() {
         throw new UnsupportedOperationException("Current operation is not support for this object");
     }
+
 }

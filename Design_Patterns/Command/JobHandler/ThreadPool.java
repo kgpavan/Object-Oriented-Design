@@ -58,7 +58,6 @@ public class ThreadPool {
     private volatile boolean shutdown;
     private final BlockingQueue<Job> jobQueue;
 
-
     public ThreadPool(int n) {
 
         jobQueue = new LinkedBlockingQueue<Job>();

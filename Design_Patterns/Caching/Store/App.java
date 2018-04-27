@@ -55,12 +55,15 @@ public class App {
      * @param args command line args
      */
     public static void main(String[] args) {
+
         AppManager.initDb(false); // VirtualDB (instead of MongoDB) was used in running the JUnit tests
                                   // and the App class to avoid Maven compilation errors. Set flag to
                                   // true to run the tests with MongoDB (provided that MongoDB is
                                   // installed and socket connection is open).
+
         AppManager.initCacheCapacity(3);
         App app = new App();
+
         app.useReadAndWriteThroughStrategy();
         app.useReadThroughAndWriteAroundStrategy();
         app.useReadThroughAndWriteBehindStrategy();
@@ -69,39 +72,39 @@ public class App {
 
     /**
      * Read-through and write-through
-     */
+     */  
     public void useReadAndWriteThroughStrategy() {
-      LOGGER.info("# CachingPolicy.THROUGH");
-      AppManager.initCachingPolicy(CachingPolicy.THROUGH);
+        LOGGER.info("# CachingPolicy.THROUGH");
+        AppManager.initCachingPolicy(CachingPolicy.THROUGH);
 
-      UserAccount userAccount1 = new UserAccount("001", "John", "He is a boy.");
+        UserAccount userAccount1 = new UserAccount("001", "John", "He is a boy.");
 
-      AppManager.save(userAccount1);
-      LOGGER.info(AppManager.printCacheContent());
-      AppManager.find("001");
-      AppManager.find("001");
+        AppManager.save(userAccount1);
+        LOGGER.info(AppManager.printCacheContent());
+        AppManager.find("001");
+        AppManager.find("001");
     }
 
     /**
      * Read-through and write-around
      */
     public void useReadThroughAndWriteAroundStrategy() {
-      LOGGER.info("# CachingPolicy.AROUND");
-      AppManager.initCachingPolicy(CachingPolicy.AROUND);
+        LOGGER.info("# CachingPolicy.AROUND");
+        AppManager.initCachingPolicy(CachingPolicy.AROUND);
 
-      UserAccount userAccount2 = new UserAccount("002", "Jane", "She is a girl.");
+        UserAccount userAccount2 = new UserAccount("002", "Jane", "She is a girl.");
 
-      AppManager.save(userAccount2);
-      LOGGER.info(AppManager.printCacheContent());
-      AppManager.find("002");
-      LOGGER.info(AppManager.printCacheContent());
-      userAccount2 = AppManager.find("002");
-      userAccount2.setUserName("Jane G.");
-      AppManager.save(userAccount2);
-      LOGGER.info(AppManager.printCacheContent());
-      AppManager.find("002");
-      LOGGER.info(AppManager.printCacheContent());
-      AppManager.find("002");
+        AppManager.save(userAccount2);
+        LOGGER.info(AppManager.printCacheContent());
+        AppManager.find("002");
+        LOGGER.info(AppManager.printCacheContent());
+        userAccount2 = AppManager.find("002");
+        userAccount2.setUserName("Jane G.");
+        AppManager.save(userAccount2);
+        LOGGER.info(AppManager.printCacheContent());
+        AppManager.find("002");
+        LOGGER.info(AppManager.printCacheContent());
+        AppManager.find("002");
     }
 
     /**

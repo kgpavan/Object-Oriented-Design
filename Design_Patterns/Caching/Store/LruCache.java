@@ -18,6 +18,7 @@ import java.util.Map;
  */
 public class LruCache {
 
+
     private static final Logger LOGGER = LoggerFactory.getLogger(LruCache.class);
 
     class Node {
@@ -101,6 +102,7 @@ public class LruCache {
       else {
         
         Node newNode = new Node(userId, userAccount);
+        
         if (cache.size() >= capacity) {
           LOGGER.info("# Cache is FULL! Removing {} from cache...", end.userId);
           cache.remove(end.userId); // remove LRU data from cache.
@@ -121,7 +123,9 @@ public class LruCache {
      * Invalidate cache for user
      */
     public void invalidate(String userId) {
+
       Node toBeRemoved = cache.remove(userId);
+
       if (toBeRemoved != null) {
         LOGGER.info("# {} has been updated! Removing older version from cache...", userId);
         remove(toBeRemoved);
@@ -149,24 +153,28 @@ public class LruCache {
      * Returns cache data in list form.
      */
     public List<UserAccount> getCacheDataInListForm() {
-      List<UserAccount> listOfCacheData = new ArrayList<>();
-      Node temp = head;
-      while (temp != null) {
-        listOfCacheData.add(temp.userAccount);
-        temp = temp.next;
-      }
-      return listOfCacheData;
+
+        List<UserAccount> listOfCacheData = new ArrayList<>();
+        Node temp = head;
+
+        while (temp != null) {
+          listOfCacheData.add(temp.userAccount);
+          temp = temp.next;
+        }
+
+        return listOfCacheData;
     }
 
     /**
      * Set cache capacity
      */
     public void setCapacity(int newCapacity) {
-      if (capacity > newCapacity) {
-        clear(); // Behavior can be modified to accommodate for decrease in cache size. For now, we'll
-                 // just clear the cache.
-      } else {
-        this.capacity = newCapacity;
-      }
+
+        if (capacity > newCapacity) {
+          clear(); // Behavior can be modified to accommodate for decrease in cache size. For now, we'll
+                   // just clear the cache.
+        } else {
+          this.capacity = newCapacity;
+        }
     }
 }

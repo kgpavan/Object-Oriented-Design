@@ -1,20 +1,7 @@
----
-layout: pattern
-title: Data Access Object
-folder: dao
-permalink: /patterns/dao/
-pumlid: 5SR14OKW30N0LhG0oVrt4o6ZE12Ov4NR_thQNQlc5aN2sd82qtz4naywAixOmyNoK8WYvT6fjdWOR7JnpLiHhuTkam4nTUhiRwZm847-J64zpUZj3m00
-categories: Persistence Tier
-tags:
- - Java
- - Difficulty-Beginner
----
 
 ## Intent
-Object provides an abstract interface to some type of database or
-other persistence mechanism.
-
-![alt text](./etc/dao.png "Data Access Object")
+Object provides an abstract interface to some type of database or other 
+persistence mechanism.
 
 ## Applicability
 Use the Data Access Object in any of the following situations

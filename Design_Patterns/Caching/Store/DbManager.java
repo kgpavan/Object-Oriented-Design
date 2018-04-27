@@ -10,12 +10,13 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.UpdateOptions;
 
+
 /**
  *
  * <p>DBManager handles the communication with the underlying data store i.e. Database. It contains the
  * implemented methods for querying, inserting, and updating data. MongoDB was used as the database
  * for the application.</p>
- * 
+ *
  * <p>Developer/Tester is able to choose whether the application should use MongoDB as its underlying
  * data storage (connect()) or a simple Java data structure to (temporarily) store the data/objects
  * during runtime (createVirtualDB()).</p>
@@ -30,7 +31,9 @@ public final class DbManager {
   private static Map<String, UserAccount> virtualDB;
 
   private DbManager() {
+
   }
+
 
   /**
    * Create DB
@@ -59,6 +62,7 @@ public final class DbManager {
       }
       return null;
     }
+
     if (db == null) {
       try {
         connect();
@@ -66,11 +70,14 @@ public final class DbManager {
         e.printStackTrace();
       }
     }
+
     FindIterable<Document> iterable =
         db.getCollection("user_accounts").find(new Document("userID", userId));
+
     if (iterable == null) {
       return null;
     }
+
     Document doc = iterable.first();
     return new UserAccount(userId, doc.getString("userName"), doc.getString("additionalInfo"));
   }
@@ -79,10 +86,12 @@ public final class DbManager {
    * Write user account to DB
    */
   public static void writeToDb(UserAccount userAccount) {
+
     if (!useMongoDB) {
       virtualDB.put(userAccount.getUserId(), userAccount);
       return;
     }
+
     if (db == null) {
       try {
         connect();
@@ -90,6 +99,7 @@ public final class DbManager {
         e.printStackTrace();
       }
     }
+
     db.getCollection("user_accounts").insertOne(
         new Document("userID", userAccount.getUserId()).append("userName",
             userAccount.getUserName()).append("additionalInfo", userAccount.getAdditionalInfo()));
@@ -99,10 +109,12 @@ public final class DbManager {
    * Update DB
    */
   public static void updateDb(UserAccount userAccount) {
+    
     if (!useMongoDB) {
       virtualDB.put(userAccount.getUserId(), userAccount);
       return;
     }
+
     if (db == null) {
       try {
         connect();
@@ -110,6 +122,7 @@ public final class DbManager {
         e.printStackTrace();
       }
     }
+    
     db.getCollection("user_accounts").updateOne(
         new Document("userID", userAccount.getUserId()),
         new Document("$set", new Document("userName", userAccount.getUserName()).append(
@@ -122,23 +135,23 @@ public final class DbManager {
    */
   public static void upsertDb(UserAccount userAccount) {
 
-    if (!useMongoDB) {
-      virtualDB.put(userAccount.getUserId(), userAccount);
-      return;
-    }
-
-    if (db == null) {
-      try {
-        connect();
-      } catch (ParseException e) {
-        e.printStackTrace();
+      if (!useMongoDB) {
+        virtualDB.put(userAccount.getUserId(), userAccount);
+        return;
       }
-    }
 
-    db.getCollection("user_accounts").updateOne(
-        new Document("userID", userAccount.getUserId()),
-        new Document("$set", new Document("userID", userAccount.getUserId()).append("userName",
-            userAccount.getUserName()).append("additionalInfo", userAccount.getAdditionalInfo())),
-        new UpdateOptions().upsert(true));
+      if (db == null) {
+        try {
+          connect();
+        } catch (ParseException e) {
+          e.printStackTrace();
+        }
+      }
+
+      db.getCollection("user_accounts").updateOne(
+          new Document("userID", userAccount.getUserId()),
+          new Document("$set", new Document("userID", userAccount.getUserId()).append("userName",
+              userAccount.getUserName()).append("additionalInfo", userAccount.getAdditionalInfo())),
+          new UpdateOptions().upsert(true));
   }
 }

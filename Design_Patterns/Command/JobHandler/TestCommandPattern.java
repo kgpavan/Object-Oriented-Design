@@ -41,6 +41,7 @@ public class TestCommandPattern {
             pool.addJob(fileIOJob);
             pool.addJob(logJob);
         }
+        
         pool.shutdownPool();
     }
 

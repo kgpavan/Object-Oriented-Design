@@ -1,13 +1,8 @@
 
 
-There are times when you feel a need of a tree data structure in your code. There are many variations to the
-tree data structure, but sometimes there is a need of a tree in which both branches as well as leafs of the
-tree should be treated as uniformly.
+There are times when you feel a need of a tree data structure in your code. There are many variations to the tree data structure, but sometimes there is a need of a tree in which both branches as well as leafs of the tree should be treated as uniformly.
 
-The Composite Pattern allows you to compose objects into a tree structure to represent the part-whole hierarchy
-which means you can create a tree of objects that is made of different parts, but that can be treated as a whole
-one big thing. Composite lets clients to treat individual objects and compositions of objects uniformly, that’s
-the intent of the Composite Pattern.
+The Composite Pattern allows you to compose objects into a tree structure to represent the part-whole hierarchy which means you can create a tree of objects that is made of different parts, but that can be treated as a whole one big thing. Composite lets clients to treat individual objects and compositions of objects uniformly, that’s the intent of the Composite Pattern.
 
 
 The Composite Pattern has four participants:
@@ -22,7 +17,8 @@ The Composite Pattern has four participants:
 
 
 
-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
 ## Intent
 Compose objects into tree structures to represent part-whole
 hierarchies. Composite lets clients treat individual objects and compositions
@@ -150,9 +146,8 @@ Use the Composite pattern when
 
 ## Real world examples
 
-* [java.awt.Container](http://docs.oracle.com/javase/8/docs/api/java/awt/Container.html) and [java.awt.Component](http://docs.oracle.com/javase/8/docs/api/java/awt/Component.html)
-* [Apache Wicket](https://github.com/apache/wicket) component tree, see [Component](https://github.com/apache/wicket/blob/91e154702ab1ff3481ef6cbb04c6044814b7e130/wicket-core/src/main/java/org/apache/wicket/Component.java) and [MarkupContainer](https://github.com/apache/wicket/blob/b60ec64d0b50a611a9549809c9ab216f0ffa3ae3/wicket-core/src/main/java/org/apache/wicket/MarkupContainer.java)
+* [java.awt.Container] 
+* [java.awt.Component]
+* [Apache Wicket] Component(https://github.com/apache/wicket) component tree, 
+* [Apache Wicket] MarkupContainer(https://github.com/apache/wicket) MarkupContainer 
 
-## Credits
-
-* [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)

@@ -1,7 +1,7 @@
-package design.design_patterns.collections.iterator;
 
 
 public class DinerMenu implements Menu {
+
 
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
@@ -20,6 +20,7 @@ public class DinerMenu implements Menu {
     }
 
     public void addItem(String name) {
+
         if (numberOfItems >= MAX_ITEMS) {
             System.err.println("Sorry, menu is full!  Can't add item to menu");
         } else {

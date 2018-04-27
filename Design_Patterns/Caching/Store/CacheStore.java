@@ -22,37 +22,40 @@ public class CacheStore {
    * Init cache capacity
    */
   public static void initCapacity(int capacity) {
-    if (cache == null) {
-      cache = new LruCache(capacity);
-    } else {
-      cache.setCapacity(capacity);
-    }
+      if (cache == null) {
+        cache = new LruCache(capacity);
+      } else {
+        cache.setCapacity(capacity);
+      }
   }
 
   /**
    * Get user account using read-through cache
    */
   public static UserAccount readThrough(String userId) {
-    if (cache.contains(userId)) {
-      LOGGER.info("# Cache Hit!");
-      return cache.get(userId);
-    }
-    LOGGER.info("# Cache Miss!");
-    UserAccount userAccount = DbManager.readFromDb(userId);
-    cache.set(userId, userAccount);
-    return userAccount;
+
+      if (cache.contains(userId)) {
+        LOGGER.info("# Cache Hit!");
+        return cache.get(userId);
+      }
+
+      LOGGER.info("# Cache Miss!");
+      UserAccount userAccount = DbManager.readFromDb(userId);
+
+      cache.set(userId, userAccount);
+      return userAccount;
   }
 
   /**
    * Get user account using write-through cache
    */
   public static void writeThrough(UserAccount userAccount) {
-    if (cache.contains(userAccount.getUserId())) {
-      DbManager.updateDb(userAccount);
-    } else {
-      DbManager.writeToDb(userAccount);
-    }
-    cache.set(userAccount.getUserId(), userAccount);
+      if (cache.contains(userAccount.getUserId())) {
+        DbManager.updateDb(userAccount);
+      } else {
+        DbManager.writeToDb(userAccount);
+      }
+      cache.set(userAccount.getUserId(), userAccount);
   }
 
   /**
@@ -72,19 +75,20 @@ public class CacheStore {
    * Get user account using read-through cache with write-back policy
    */
   public static UserAccount readThroughWithWriteBackPolicy(String userId) {
-    if (cache.contains(userId)) {
-      LOGGER.info("# Cache Hit!");
-      return cache.get(userId);
-    }
-    LOGGER.info("# Cache Miss!");
-    UserAccount userAccount = DbManager.readFromDb(userId);
-    if (cache.isFull()) {
-      LOGGER.info("# Cache is FULL! Writing LRU data to DB...");
-      UserAccount toBeWrittenToDb = cache.getLruData();
-      DbManager.upsertDb(toBeWrittenToDb);
-    }
-    cache.set(userId, userAccount);
-    return userAccount;
+      if (cache.contains(userId)) {
+        LOGGER.info("# Cache Hit!");
+        return cache.get(userId);
+      }
+      
+      LOGGER.info("# Cache Miss!");
+      UserAccount userAccount = DbManager.readFromDb(userId);
+      if (cache.isFull()) {
+        LOGGER.info("# Cache is FULL! Writing LRU data to DB...");
+        UserAccount toBeWrittenToDb = cache.getLruData();
+        DbManager.upsertDb(toBeWrittenToDb);
+      }
+      cache.set(userId, userAccount);
+      return userAccount;
   }
 
   /**

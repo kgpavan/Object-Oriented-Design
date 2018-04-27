@@ -1,28 +1,12 @@
 
-Underlaying design pattern behind the Aspect Oriented Programming (AOP)
+DECORATOR DESIGN PATTERN 
+------------------------
 
-
-
----
-layout: pattern
-title: Decorator
-folder: decorator
-permalink: /patterns/decorator/
-pumlid: HSV14SCm20J0Lk82BFxf1YF6LaP26ZZizfDVVhjRC-bPDRs_Bc35cyZvAMV3bKU6kao36ehCGQtdms2d3z-yLursshuOKBUWmV43LPNfZEcaaFzA-YWhH_y2
-categories: Structural
-tags:
- - Java
- - Gang Of Four
- - Difficulty-Beginner
----
-
-## Also known as
-Wrapper
+------------------------------------------------------------------------------------------
+## Also known as Wrapper
 
 ## Intent
-Attach additional responsibilities to an object dynamically.
-Decorators provide a flexible alternative to subclassing for extending
-functionality.
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 ## Explanation
 
@@ -135,3 +119,9 @@ Use Decorator
 * [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
 * [Functional Programming in Java: Harnessing the Power of Java 8 Lambda Expressions](http://www.amazon.com/Functional-Programming-Java-Harnessing-Expressions/dp/1937785467/ref=sr_1_1)
 * [J2EE Design Patterns](http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2)
+
+
+
+
+------------------------------------------------------------------------------------------
+DECORATOR IS THE Underlaying design pattern behind the Aspect Oriented Programming (AOP)

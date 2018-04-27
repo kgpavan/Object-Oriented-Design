@@ -1,27 +1,3 @@
-/**
- * The MIT License
- * Copyright (c) 2014-2016 Ilkka Seppälä
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
-
-package com.iluwatar.dao;
 
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -43,39 +19,42 @@ import java.util.stream.Stream;
  */
 public interface CustomerDao {
 
-  /**
-   * @return all the customers as a stream. The stream may be lazily or eagerly evaluated based 
-   *     on the implementation. The stream must be closed after use.
-   * @throws Exception if any error occurs.
-   */
-  Stream<Customer> getAll() throws Exception;
-  
-  /**
-   * @param id unique identifier of the customer.
-   * @return an optional with customer if a customer with unique identifier <code>id</code>
-   *     exists, empty optional otherwise.
-   * @throws Exception if any error occurs.
-   */
-  Optional<Customer> getById(int id) throws Exception;
 
-  /**
-   * @param customer the customer to be added.
-   * @return true if customer is successfully added, false if customer already exists.
-   * @throws Exception if any error occurs.
-   */
-  boolean add(Customer customer) throws Exception;
+    /**
+     * @return all the customers as a stream. The stream may be lazily or eagerly evaluated based 
+     *     on the implementation. The stream must be closed after use.
+     * @throws Exception if any error occurs.
+     */
+    Stream<Customer> getAll() throws Exception;
 
-  /**
-   * @param customer the customer to be updated.
-   * @return true if customer exists and is successfully updated, false otherwise.
-   * @throws Exception if any error occurs.
-   */
-  boolean update(Customer customer) throws Exception;
+    
+    /**
+     * @param id unique identifier of the customer.
+     * @return an optional with customer if a customer with unique identifier <code>id</code>
+     *     exists, empty optional otherwise.
+     * @throws Exception if any error occurs.
+     */
+    Optional<Customer> getById(int id) throws Exception;
 
-  /**
-   * @param customer the customer to be deleted.
-   * @return true if customer exists and is successfully deleted, false otherwise.
-   * @throws Exception if any error occurs.
-   */
-  boolean delete(Customer customer) throws Exception;
+
+    /**
+     * @param customer the customer to be added.
+     * @return true if customer is successfully added, false if customer already exists.
+     * @throws Exception if any error occurs.
+     */
+    boolean add(Customer customer) throws Exception;
+
+    /**
+     * @param customer the customer to be updated.
+     * @return true if customer exists and is successfully updated, false otherwise.
+     * @throws Exception if any error occurs.
+     */
+    boolean update(Customer customer) throws Exception;
+
+    /**
+     * @param customer the customer to be deleted.
+     * @return true if customer exists and is successfully deleted, false otherwise.
+     * @throws Exception if any error occurs.
+     */
+    boolean delete(Customer customer) throws Exception;
 }
