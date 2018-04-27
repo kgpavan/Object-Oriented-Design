@@ -1,19 +1,20 @@
----
-layout: pattern
-title: CQRS
-folder: cqrs
-permalink: /patterns/cqrs/
-pumlid: 7SPR4a0m3030gt00pR_RH6I8QQFouFgC_TfHb6gkd5Q7FQBx363ub4rYpoMTZKuDrYXqDX37HIuuyCPfPPTDfuuHREhGqBy0NUR0GNzAMYizMtq1
-categories: Architectural
-tags:
- - Java
- - Difficulty-Intermediate
----
 
+
+/**
+ * CQRS : Command Query Responsibility Segregation. A pattern used to separate query services from commands or writes
+ * services. The pattern is very simple but it has many consequences. For example, it can be used to tackle down a
+ * complex domain, or to use other architectures that were hard to implement with the classical way.
+ * 
+ * This implementation is an example of managing books and authors in a library. The persistence of books and authors is
+ * done according to the CQRS architecture. A command side that deals with a data model to persist(insert,update,delete)
+ * objects to a database. And a query side that uses native queries to get data from the database and return objects as
+ * DTOs (Data transfer Objects).
+ */
+
+ 
 ## Intent
 CQRS Command Query Responsibility Segregation - Separate the query side from the command side.
 
-![alt text](./etc/cqrs.png "CQRS")
 
 ## Applicability
 Use the CQRS pattern when

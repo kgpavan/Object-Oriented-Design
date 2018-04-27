@@ -46,6 +46,5 @@ public class SedanCarBuilder implements CarBuilder{
 	@Override
 	public Car getCar(){
 		return car;
-	}
-	
+	}	
 }

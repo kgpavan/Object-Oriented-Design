@@ -1,8 +1,0 @@
-Press ENTER
-low speed
-Press ENTER
-medium speed
-Press ENTER
-high speed
-Press ENTER
-turning off

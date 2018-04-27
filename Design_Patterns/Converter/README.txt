@@ -1,21 +1,9 @@
----
-layout: pattern
-title: Converter
-folder: converter
-permalink: /patterns/converter/
-categories:
-tags:
- - Java
- - Difficulty-Beginner
----
 
 ## Intent
 The purpose of the Converter Pattern is to provide a generic, common way of bidirectional
 conversion between corresponding types, allowing a clean implementation in which the types do not
-need to be aware of each other. Moreover, the Converter Pattern introduces bidirectional collection
-mapping, reducing a boilerplate code to minimum.
+need to be aware of each other. Moreover, the Converter Pattern introduces bidirectional collection mapping, reducing a boilerplate code to minimum.
 
-![alt text](./etc/converter.png "Converter Pattern")
 
 ## Applicability
 Use the Converter Pattern in the following situations:
