@@ -1,4 +1,3 @@
-package com.javacodegeeks.patterns.abstractfactorypattern;
 
 public class TWErrorXMLParser implements XMLParser{
 
@@ -7,5 +6,4 @@ public class TWErrorXMLParser implements XMLParser{
 		System.out.println("TW Parsing error XML...");
 		return "TW Error XML Message";
 	}
-
 }

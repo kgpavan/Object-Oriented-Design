@@ -1,5 +1,3 @@
-package com.sourcemaking.abstract_factory.second_example;
-
 /**
  * Abstract Factory classes are often implemented with Factory Methods,
  * but they can also be implemented using Prototype. Abstract Factory
@@ -11,6 +9,7 @@ package com.sourcemaking.abstract_factory.second_example;
  */
 
 class Expression implements Cloneable{
+
     public String str;
 
     public Expression(String str) {
@@ -35,9 +34,11 @@ class Expression implements Cloneable{
 }
 
 abstract class AbstractFactory {
+
     public Expression prototype;
 
     public Expression makePhase() {
+
         return prototype.clone();
     }
 

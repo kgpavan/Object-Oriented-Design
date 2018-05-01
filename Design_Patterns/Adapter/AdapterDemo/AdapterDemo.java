@@ -1,4 +1,3 @@
-package com.sourcemaking.adapter.first_example.after;
 
 /**
  * The Adapter's "extra level of indirection" takes care of

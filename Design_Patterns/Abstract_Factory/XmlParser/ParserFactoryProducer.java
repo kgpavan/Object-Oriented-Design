@@ -1,4 +1,4 @@
-package com.javacodegeeks.patterns.abstractfactorypattern;
+
 
 public final class ParserFactoryProducer {
 
@@ -8,10 +8,13 @@ public final class ParserFactoryProducer {
 
 	public static AbstractParserFactory getFactory(String factoryType){
 		
-		switch(factoryType){
+		switch(factoryType){			
+
+			case "NYFactory": 
+				return new NYParserFactory();
 			
-			case "NYFactory": return new NYParserFactory();
-			case "TWFactory": return new TWParserFactory();
+			case "TWFactory": 
+				return new TWParserFactory();						
 		}
 
 		return null;

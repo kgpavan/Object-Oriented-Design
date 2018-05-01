@@ -1,5 +1,8 @@
 
+AGGREGATOR MICRO-SERVICES DESIGN PATTERN 
+————————————————————————————————————————
 
+——————————————————————
 ## Intent
 
 The user makes a single call to the Aggregator, and the aggregator then calls each relevant microservice and collects the data, apply business logic to it, and further publish is as a REST Endpoint.

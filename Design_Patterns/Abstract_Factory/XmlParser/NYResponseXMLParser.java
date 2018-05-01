@@ -1,4 +1,3 @@
-package com.javacodegeeks.patterns.abstractfactorypattern;
 
 public class NYResponseXMLParser implements XMLParser{
 
@@ -7,5 +6,4 @@ public class NYResponseXMLParser implements XMLParser{
 		System.out.println("NY Parsing response XML...");
 		return "NY Response XML Message";
 	}
-
 }

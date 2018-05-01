@@ -1,5 +1,3 @@
-package com.javacodegeeks.patterns.abstractfactorypattern;
-
 
 public class TWOrderXMLParser implements XMLParser{
 

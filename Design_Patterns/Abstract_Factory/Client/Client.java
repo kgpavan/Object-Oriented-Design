@@ -1,11 +1,10 @@
-package com.sourcemaking.abstract_factory.first_example;
 
 /**
  * In this example, provides an interface for creating PC devices without
  * specifying their concrete classes. Pattern is implemented by creating an
  * abstract class AbstractFactory, which is an interface for creating
  * different system components (heirs of CPU and MMU). Then write classes
- * that implement this interface(EmberToolkit & EnginolaToolkit).
+ * that implement this interface(EmberToolkit and EnginolaToolkit).
  */
 
 abstract class CPU {}
@@ -20,7 +19,9 @@ class EmberMMU extends MMU {}
 
 class EnginolaMMU extends MMU {}
 
+
 class EmberToolkit extends AbstractFactory {
+
     @Override
     public CPU createCPU() {
         return new EmberCPU();
@@ -49,13 +50,16 @@ enum Architecture {
 }
 
 abstract class AbstractFactory {
+
     private static final EmberToolkit EMBER_TOOLKIT = new EmberToolkit();
     private static final EnginolaToolkit ENGINOLA_TOOLKIT = new EnginolaToolkit();
 
     // Returns a concrete factory object that is an instance of the
     // concrete factory class appropriate for the given architecture.
     static AbstractFactory getFactory(Architecture architecture) {
+    
         AbstractFactory factory = null;
+    
         switch (architecture) {
             case ENGINOLA:
                 factory = ENGINOLA_TOOLKIT;
@@ -70,8 +74,12 @@ abstract class AbstractFactory {
     public abstract MMU createMMU();
 }
 
+
+
 public class Client {
+
     public static void main(String[] args) {
+
         AbstractFactory factory = AbstractFactory.getFactory(Architecture.EMBER);
         CPU cpu = factory.createCPU();
     }
