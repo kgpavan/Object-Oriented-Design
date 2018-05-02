@@ -1,19 +1,19 @@
 
 
 
-101 DESIGN PATTERNS & TIPS FOR DEVELOPERS - SOURCEMAKING <HTTPS://SOURCEMAKING.COM/DESIGN-PATTERNS-AND-TIPS>
+101 design patterns & tips for developers - sourcemaking <https://sourcemaking.Com/design-patterns-and-tips>
 
 
 
-OBJECT ORIENTED DESIGN
+Object oriented design
 ——————————————————————
 
-1. OBJECT ORIENTED PROGRAMMING (OOP) CONCEPTS LIKE
-ENCAPSULATION, INHERITANCE, POLYMORPHISM AND ABSTRACTION
+1. Object oriented programming (oop) concepts like
+Encapsulation, inheritance, polymorphism and abstraction
 
-2. DESIGN PATTERNS
+2. Design patterns
 
-3. SOLID PRINCIPLES
+3. Solid principles
 
 
 
@@ -22,417 +22,417 @@ ENCAPSULATION, INHERITANCE, POLYMORPHISM AND ABSTRACTION
 
 
 ————————————————————————————————————————————————————————————————————————————————————
-SOLID DESIGN PRINCIPLES 
+Solid design principles 
 ———————————————————————
 
 
-IN COMPUTER PROGRAMMING, SOLID (SINGLE RESPONSIBILITY, OPEN-CLOSED, LISKOV SUBSTITUTION, INTERFACE SEGREGATION AND DEPENDENCY INVERSION) IS A MNEMONIC ACRONYM INTRODUCED BY MICHAEL FEATHERS FOR THE "FIRST FIVE PRINCIPLES" NAMED BY ROBERT C. MARTIN IN THE EARLY 2000S[3] THAT STANDS FOR FIVE BASIC PRINCIPLES OF OBJECT-ORIENTED PROGRAMMING AND DESIGN. THE INTENTION IS THAT THESE PRINCIPLES, WHEN APPLIED TOGETHER, WILL MAKE IT MORE LIKELY THAT A PROGRAMMER WILL CREATE A SYSTEM THAT IS EASY TO MAINTAIN AND EXTEND OVER TIME.[3] THE PRINCIPLES OF SOLID ARE GUIDELINES THAT CAN BE APPLIED WHILE WORKING ON SOFTWARE TO REMOVE CODE SMELLS BY PROVIDING A FRAMEWORK THROUGH WHICH THE PROGRAMMER MAY REFACTOR THE SOFTWARE'S SOURCE CODE UNTIL IT IS BOTH LEGIBLE AND EXTENSIBLE. IT IS PART OF AN OVERALL STRATEGY OF AGILE AND ADAPTIVE SOFTWARE DEVELOPMENT.
+In computer programming, solid (single responsibility, open-closed, liskov substitution, interface segregation and dependency inversion) is a mnemonic acronym introduced by michael feathers for the "First five principles" named by robert c. Martin in the early 2000s[3] that stands for five basic principles of object-oriented programming and design. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.[3] the principles of solid are guidelines that can be applied while working on software to remove code smells by providing a framework through which the programmer may refactor the software's source code until it is both legible and extensible. It is part of an overall strategy of agile and adaptive software development.
 
 	
-1. SINGLE RESPONSIBILITY PRINCIPLE (S)
-A CLASS SHOULD HAVE ONLY A SINGLE RESPONSIBILITY (I.E. ONLY ONE POTENTIAL CHANGE IN THE SOFTWARE'S SPECIFICATION SHOULD BE ABLE TO AFFECT THE SPECIFICATION OF THE CLASS)
+1. Single responsibility principle (s)
+A class should have only a single responsibility (I.E. Only one potential change in the software's specification should be able to affect the specification of the class)
 
-2. OPEN/ CLOSE PRINCIPLE (O)
-“SOFTWARE ENTITIES … SHOULD BE OPEN FOR EXTENSION, BUT CLOSED FOR MODIFICATION.”
+2. Open/ close principle (o)
+“software entities … should be open for extension, but closed for modification.”
 
-3. LISKOV SUBSTITUTION PRINCIPLE (L)
-“OBJECTS IN A PROGRAM SHOULD BE REPLACEABLE WITH INSTANCES OF THEIR SUBTYPES WITHOUT ALTERING THE CORRECTNESS OF THAT PROGRAM.” SEE ALSO DESIGN BY CONTRACT.
+3. Liskov substitution principle (l)
+“objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.” see also design by contract.
 
-4. INTERFACE SEGREGATION PRINCIPLE (I)
-“MANY CLIENT-SPECIFIC INTERFACES ARE BETTER THAN ONE GENERAL-PURPOSE INTERFACE.”
+4. Interface segregation principle (I)
+“many client-specific interfaces are better than one general-purpose interface.”
 
-5. DEPENDENCY INVERSION PRINCIPLE (D)
-ONE SHOULD DEPEND UPON ABSTRACTIONS, [NOT] CONCRETIONS.
+5. Dependency inversion principle (d)
+One should depend upon abstractions, [not] concretions.
 ————————————————————————————————————————————————————————————————————————————————————
 
 
 
 
 
-SOFTWARE DESIGN PATTERNS
+Software design patterns
 ————————————————————————
 
 
-1. ADAPTER DESIGN PATTERN
+1. Adapter design pattern
 —————————————————————————
 
-THE ADAPTER PATTERN IS A SOFTWARE DESIGN PATTERN (ALSO KNOWN AS WRAPPER, AN ALTERNATIVE NAMING SHARED WITH THE DECORATOR PATTERN) THAT ALLOWS THE INTERFACE OF AN EXISTING CLASS TO BE USED AS ANOTHER INTERFACE.[1] IT IS OFTEN USED TO MAKE EXISTING CLASSES WORK WITH OTHERS WITHOUT MODIFYING THEIR SOURCE CODE.
+The adapter pattern is a software design pattern (also known as wrapper, an alternative naming shared with the decorator pattern) that allows the interface of an existing class to be used as another interface.[1] it is often used to make existing classes work with others without modifying their source code.
 
-2. FACADE DESIGN PATTERN
+2. Facade design pattern
 ————————————————————————
-THE FACADE PATTERN MAKES A COMPLEX INTERFACE EASIER TO USE, USING A FACADE CLASS. THE FACADE PATTERN PROVIDES A UNIFIED INTERFACE TO A SET OF INTERFACE IN A SUBSYSTEM. FACADE DEFINES A HIGHER-LEVEL INTERFACE THAT MAKES THE SUBSYSTEM EASIER TO USE.
+The facade pattern makes a complex interface easier to use, using a facade class. The facade pattern provides a unified interface to a set of interface in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
-YOU WANT TO PROVIDE A SIMPLE INTERFACE TO A COMPLEX SUBSYSTEM. SUBSYSTEMS OFTEN GET MORE COMPLEX AS THEY EVOLVE. MOST PATTERNS, WHEN APPLIED, RESULT IN MORE AND SMALLER CLASSES. THIS MAKES THE SUBSYSTEM MORE REUSABLE AND EASIER TO CUSTOMIZE, BUT IT ALSO BECOMES HARDER TO USE FOR CLIENTS THAT DON’T NEED TO CUSTOMIZE IT. A FACADE CAN PROVIDE A SIMPLE DEFAULT VIEW OF THE SUBSYSTEM THAT IS GOOD ENOUGH FOR MOST CLIENTS. ONLY CLIENTS NEEDING MORE CUSTOMIZABILITY WILL NEED TO LOOK BEYOND THE FACADE. THERE ARE MANY DEPENDENCIES BETWEEN CLIENTS AND THE IMPLEMENTATION CLASSES OF AN ABSTRACTION. INTRODUCE A FACADE TO DECOUPLE THE SUBSYSTEM FROM CLIENTS AND OTHER SUBSYSTEMS, THEREBY PROMOTING SUBSYSTEM INDEPENDENCE AND PORTABILITY. YOU CAN LAYER YOUR SUBSYSTEMS. USE A FACADE TO DEFINE AN ENTRY POINT TO EACH SUBSYSTEM LEVEL. IF SUBSYSTEMS ARE DEPENDENT, THEN YOU CAN SIMPLIFY THE DEPENDENCIES BETWEEN THEM BY MAKING THEM COMMUNICATE WITH EACH OTHER SOLELY THROUGH THEIR FACADES.
+You want to provide a simple interface to a complex subsystem. Subsystems often get more complex as they evolve. Most patterns, when applied, result in more and smaller classes. This makes the subsystem more reusable and easier to customize, but it also becomes harder to use for clients that don’t need to customize it. A facade can provide a simple default view of the subsystem that is good enough for most clients. Only clients needing more customizability will need to look beyond the facade. There are many dependencies between clients and the implementation classes of an abstraction. Introduce a facade to decouple the subsystem from clients and other subsystems, thereby promoting subsystem independence and portability. You can layer your subsystems. Use a facade to define an entry point to each subsystem level. If subsystems are dependent, then you can simplify the dependencies between them by making them communicate with each other solely through their facades.
 
-3. COMPOSITE DESIGN PATTERN
-THE COMPOSITE PATTERN ALLOWS YOU TO COMPOSE OBJECTS INTO A TREE STRUCTURE TO REPRESENT THE PART-WHOLE HIERARCHY WHICH MEANS YOU CAN CREATE A TREE OF OBJECTS THAT IS MADE OF DIFFERENT PARTS, BUT THAT CAN BE TREATED AS A WHOLE ONE BIG THING. COMPOSITE LETS CLIENTS TO TREAT INDIVIDUAL OBJECTS AND COMPOSITIONS OF OBJECTS UNIFORMLY, THAT’S THE INTENT OF THE COMPOSITE PATTERN.
+3. Composite design pattern
+The composite pattern allows you to compose objects into a tree structure to represent the part-whole hierarchy which means you can create a tree of objects that is made of different parts, but that can be treated as a whole one big thing. Composite lets clients to treat individual objects and compositions of objects uniformly, that’s the intent of the composite pattern.
 
-4. BRIDGE DESIGN PATTERN
-THE BRIDGE PATTERN’S INTENT IS TO DECOUPLE AN ABSTRACTION FROM ITS IMPLEMENTATION SO THAT THE TWO CAN VARY INDEPENDENTLY. IT PUTS THE ABSTRACTION AND IMPLEMENTATION INTO TWO DIFFERENT CLASS HIERARCHIES SO THAT BOTH CAN BE EXTEND INDEPENDENTLY.
+4. Bridge design pattern
+The bridge pattern’s intent is to decouple an abstraction from its implementation so that the two can vary independently. It puts the abstraction and implementation into two different class hierarchies so that both can be extend independently.
 
-5. SINGLETON DESIGN PATTERN
-THE SINGLETON PATTERN IS USED WHEN THERE MUST BE EXACTLY ONE INSTANCE OF A CLASS, AND IT MUST BE ACCESSIBLE TO CLIENTS FROM A WELL-KNOWN ACCESS POINT OR WHEN THE SOLE INSTANCE SHOULD BE EXTENSIBLE BY SUB-CLASSING, AND CLIENTS SHOULD BE ABLE TO USE AN EXTENDED INSTANCE WITHOUT MODIFYING THEIR CODE.
+5. Singleton design pattern
+The singleton pattern is used when there must be exactly one instance of a class, and it must be accessible to clients from a well-known access point or when the sole instance should be extensible by sub-classing, and clients should be able to use an extended instance without modifying their code.
 
-6. OBSERVER DESIGN PATTERN
-THE OBSERVER PATTERN IS A KIND OF BEHAVIOR PATTERN WHICH IS CONCERNED WITH THE ASSIGNMENT OF RESPONSIBILITIES BETWEEN OBJECTS. IT SHOULD BE USED WHEN AN ABSTRACTION HAS TWO ASPECTS, ONE DEPENDENT ON THE OTHER, WHEN A CHANGE TO ONE OBJECT REQUIRES CHANGING OTHERS, AND YOU DON’T KNOW HOW MANY OBJECTS NEED TO BE CHANGED OR WHEN AN OBJECT SHOULD BE ABLE TO NOTIFY OTHER OBJECTS WITHOUT MAKING ASSUMPTIONS ABOUT WHO THESE OBJECTS ARE. IN OTHER WORDS, YOU DON’T WANT THESE OBJECTS TIGHTLY COUPLED.
+6. Observer design pattern
+The observer pattern is a kind of behavior pattern which is concerned with the assignment of responsibilities between objects. It should be used when an abstraction has two aspects, one dependent on the other, when a change to one object requires changing others, and you don’t know how many objects need to be changed or when an object should be able to notify other objects without making assumptions about who these objects are. In other words, you don’t want these objects tightly coupled.
 
-7. MEDIATOR DESIGN PATTERN
-THE MEDIATOR PATTERN DEFINES AN OBJECT THAT ENCAPSULATES HOW A SET OF OBJECTS INTERACT. MEDIATOR PROMOTES LOOSE COUPLING BY KEEPING OBJECTS FROM REFERRING TO EACH OTHER EXPLICITLY, AND IT LETS YOU VARY THEIR INTERACTION INDEPENDENTLY. RATHER THAN INTERACTING DIRECTLY WITH EACH OTHER, OBJECTS ASK THE MEDIATOR TO INTERACT ON THEIR BEHALF WHICH RESULTS IN REUSABILITY AND LOOSE COUPLING. YOU WILL LEARN HOW AND WHEN THE MEDIATOR DESIGN PATTERN SHOULD BE USED AND HOW TO STRUCTURE YOUR CODE IN ORDER TO IMPLEMENT IT.
+7. Mediator design pattern
+The mediator pattern defines an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently. Rather than interacting directly with each other, objects ask the mediator to interact on their behalf which results in reusability and loose coupling. You will learn how and when the mediator design pattern should be used and how to structure your code in order to implement it.
 
-8. PROXY DESIGN PATTERN
-THE PROXY PATTERN PROVIDES A SURROGATE OR PLACEHOLDER FOR ANOTHER OBJECT TO CONTROL ACCESS TO IT. IT COMES UP WITH MANY DIFFERENT VARIATIONS. SOME OF THE IMPORTANT VARIATIONS ARE, REMOTE PROXY, VIRTUAL PROXY, AND PROTECTION PROXY. IN THIS LESSON, WE WILL KNOW MORE ABOUT THESE VARIATIONS AND WE WILL IMPLEMENT EACH OF THEM IN JAVA. BUT BEFORE WE DO THAT, LET’S GET TO KNOW MORE ABOUT THE PROXY PATTERN IN GENERAL. YOU WILL LEARN HOW AND WHEN THE PROXY DESIGN PATTERN SHOULD BE USED AND HOW TO STRUCTURE YOUR CODE IN ORDER TO IMPLEMENT IT.
+8. Proxy design pattern
+The proxy pattern provides a surrogate or placeholder for another object to control access to it. It comes up with many different variations. Some of the important variations are, remote proxy, virtual proxy, and protection proxy. In this lesson, we will know more about these variations and we will implement each of them in Java. But before we do that, let’s get to know more about the proxy pattern in general. You will learn how and when the proxy design pattern should be used and how to structure your code in order to implement it.
 
-9. CHAIN OF RESPONSIBILITY DESIGN PATTERN
-THE CHAIN OF RESPONSIBILITY PATTERN IS A BEHAVIOR PATTERN IN WHICH A GROUP OF OBJECTS IS CHAINED TOGETHER IN A SEQUENCE AND A RESPONSIBILITY (A REQUEST) IS PROVIDED IN ORDER TO BE HANDLED BY THE GROUP. IF AN OBJECT IN THE GROUP CAN PROCESS THE PARTICULAR REQUEST, IT DOES SO AND RETURNS THE CORRESPONDING RESPONSE. OTHERWISE, IT FORWARDS THE REQUEST TO THE SUBSEQUENT OBJECT IN THE GROUP.
+9. Chain of responsibility design pattern
+The chain of responsibility pattern is a behavior pattern in which a group of objects is chained together in a sequence and a responsibility (a request) is provided in order to be handled by the group. If an object in the group can process the particular request, it does so and returns the corresponding response. Otherwise, it forwards the request to the subsequent object in the group.
 
-10. FLYWEIGHT DESIGN PATTERN
-THE FLYWEIGHT PATTERN IS DESIGNED TO CONTROL OBJECT CREATION WHERE OBJECTS IN AN APPLICATION HAVE GREAT SIMILARITIES AND ARE OF A SIMILAR KIND, AND PROVIDES YOU WITH A BASIC CACHING MECHANISM. IT ALLOWS YOU TO CREATE ONE OBJECT PER TYPE (THE TYPE HERE DIFFERS BY A PROPERTY OF THAT OBJECT), AND IF YOU ASK FOR AN OBJECT WITH THE SAME PROPERTY (ALREADY CREATED), IT WILL RETURN YOU THE SAME OBJECT INSTEAD OF CREATING A NEW ONE.
+10. Flyweight design pattern
+The flyweight pattern is designed to control object creation where objects in an application have great similarities and are of a similar kind, and provides you with a basic caching mechanism. It allows you to create one object per type (the type here differs by a property of that object), and if you ask for an object with the same property (already created), it will return you the same object instead of creating a new one.
 
-11. BUILDER DESIGN PATTERN
-THE INTENT OF THE BUILDER PATTERN IS TO SEPARATE THE CONSTRUCTION OF A COMPLEX OBJECT FROM ITS REPRESENTATION, SO THAT THE SAME CONSTRUCTION PROCESS CAN CREATE DIFFERENT REPRESENTATIONS. THIS TYPE OF SEPARATION REDUCES THE OBJECT SIZE. THE DESIGN TURNS OUT TO BE MORE MODULAR WITH EACH IMPLEMENTATION CONTAINED IN A DIFFERENT BUILDER OBJECT. ADDING A NEW IMPLEMENTATION (I.E., ADDING A NEW BUILDER) BECOMES EASIER.
+11. Builder design pattern
+The intent of the builder pattern is to separate the construction of a complex object from its representation, so that the same construction process can create different representations. This type of separation reduces the object size. The design turns out to be more modular with each implementation contained in a different builder object. Adding a new implementation (I.E., adding a new builder) becomes easier.
 
-12. FACTORY DESIGN PATTERN
-THE FACTORY METHOD PATTERN GIVES US A WAY TO ENCAPSULATE THE INSTANTIATIONS OF CONCRETE TYPES. THE FACTORY METHOD PATTERN ENCAPSULATES THE FUNCTIONALITY REQUIRED TO SELECT AND INSTANTIATE AN APPROPRIATE CLASS, INSIDE A DESIGNATED METHOD REFERRED TO AS A FACTORY METHOD. THE FACTORY METHOD SELECTS AN APPROPRIATE CLASS FROM A CLASS HIERARCHY BASED ON THE APPLICATION CONTEXT AND OTHER INFLUENCING FACTORS. IT THEN INSTANTIATES THE SELECTED CLASS AND RETURNS IT AS AN INSTANCE OF THE PARENT CLASS TYPE.
+12. Factory design pattern
+The factory method pattern gives us a way to encapsulate the instantiations of concrete types. The factory method pattern encapsulates the functionality required to select and instantiate an appropriate class, inside a designated method referred to as a factory method. The factory method selects an appropriate class from a class hierarchy based on the application context and other influencing factors. It then instantiates the selected class and returns it as an instance of the parent class type.
 
-13. ABSTRACT FACTORY DESIGN PATTERN
-THE ABSTRACT FACTORY (A.K.A. KIT) IS A DESIGN PATTERN WHICH PROVIDES AN INTERFACE FOR CREATING FAMILIES OF RELATED OR DEPENDENT OBJECTS WITHOUT SPECIFYING THEIR CONCRETE CLASSES. THE ABSTRACT FACTORY PATTERN TAKES THE CONCEPT OF THE FACTORY METHOD PATTERN TO THE NEXT LEVEL. AN ABSTRACT FACTORY IS A CLASS THAT PROVIDES AN INTERFACE TO PRODUCE A FAMILY OF OBJECTS.
+13. Abstract factory design pattern
+The abstract factory (a.K.A. Kit) is a design pattern which provides an interface for creating families of related or dependent objects without specifying their concrete classes. The abstract factory pattern takes the concept of the factory method pattern to the next level. An abstract factory is a class that provides an interface to produce a family of objects.
 
-14. PROTOTYPE DESIGN PATTERN
-THE PROTOTYPE DESIGN PATTERN IS USED TO SPECIFY THE KINDS OF OBJECTS TO CREATE USING A PROTOTYPICAL INSTANCE, AND CREATE NEW OBJECTS BY COPYING THIS PROTOTYPE. THE CONCEPT IS TO COPY AN EXISTING OBJECT RATHER THAN CREATING A NEW INSTANCE FROM SCRATCH, SOMETHING THAT MAY INCLUDE COSTLY OPERATIONS. THE EXISTING OBJECT ACTS AS A PROTOTYPE AND CONTAINS THE STATE OF THE OBJECT.
+14. Prototype design pattern
+The prototype design pattern is used to specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype. The concept is to copy an existing object rather than creating a new instance from scratch, something that may include costly operations. The existing object acts as a prototype and contains the state of the object.
 
-15. MEMENTO DESIGN PATTERN
-SOMETIMES IT’S NECESSARY TO RECORD THE INTERNAL STATE OF AN OBJECT. THIS IS REQUIRED WHEN IMPLEMENTING CHECKPOINTS AND “UNDO” MECHANISMS THAT LET USERS BACK OUT OF TENTATIVE OPERATIONS OR RECOVER FROM ERRORS. YOU MUST SAVE STATE INFORMATION SOMEWHERE, SO THAT YOU CAN RESTORE OBJECTS TO THEIR PREVIOUS CONDITIONS. BUT OBJECTS NORMALLY ENCAPSULATE SOME OR ALL OF THEIR STATE, MAKING IT INACCESSIBLE TO OTHER OBJECTS AND IMPOSSIBLE TO SAVE EXTERNALLY. EXPOSING THIS STATE WOULD VIOLATE ENCAPSULATION, WHICH CAN COMPROMISE THE APPLICATION’S RELIABILITY AND EXTENSIBILITY. THE MEMENTO PATTERN CAN BE USED TO ACCOMPLISH THIS WITHOUT EXPOSING THE OBJECT’S INTERNAL STRUCTURE.
+15. Memento design pattern
+Sometimes it’s necessary to record the internal state of an object. This is required when implementing checkpoints and “undo” mechanisms that let users back out of tentative operations or recover from errors. You must save state information somewhere, so that you can restore objects to their previous conditions. But objects normally encapsulate some or all of their state, making it inaccessible to other objects and impossible to save externally. Exposing this state would violate encapsulation, which can compromise the application’s reliability and extensibility. The memento pattern can be used to accomplish this without exposing the object’s internal structure.
 
-16. TEMPLETE DESIGN PATTERN
-THE TEMPLATE DESIGN PATTERN IS A BEHAVIOR PATTERN AND, AS THE NAME SUGGESTS, IT PROVIDES A TEMPLATE OR A STRUCTURE OF AN ALGORITHM WHICH IS USED BY USERS. A USER PROVIDES ITS OWN IMPLEMENTATION WITHOUT CHANGING THE ALGORITHM’S STRUCTURE. THE TEMPLATE PATTERN DEFINES THE SKELETON OF AN ALGORITHM IN AN OPERATION, DEFERRING SOME STEPS TO SUBCLASSES. TEMPLATE METHOD LETS SUBCLASSES TO REDEFINE CERTAIN STEPS OF AN ALGORITHM WITHOUT CHANGING THE ALGORITHM’S STRUCTURE.
+16. Templete design pattern
+The template design pattern is a behavior pattern and, as the name suggests, it provides a template or a structure of an algorithm which is used by users. A user provides its own implementation without changing the algorithm’s structure. The template pattern defines the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template method lets subclasses to redefine certain steps of an algorithm without changing the algorithm’s structure.
 
-17. STATE DESIGN PATTERN
-THE STATE DESIGN PATTERN ALLOWS AN OBJECT TO ALTER ITS BEHAVIOR WHEN ITS INTERNAL STATE CHANGES. THE OBJECT WILL APPEAR TO CHANGE ITS CLASS. THE STATE OF AN OBJECT CAN BE DEFINED AS ITS EXACT CONDITION AT ANY GIVEN POINT OF TIME, DEPENDING ON THE VALUES OF ITS PROPERTIES OR ATTRIBUTES. THE SET OF METHODS IMPLEMENTED BY A CLASS CONSTITUTES THE BEHAVIOR OF ITS INSTANCES. WHENEVER THERE IS A CHANGE IN THE VALUES OF ITS ATTRIBUTES, WE SAY THAT THE STATE OF AN OBJECT HAS CHANGED.
+17. State design pattern
+The state design pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class. The state of an object can be defined as its exact condition at any given point of time, depending on the values of its properties or attributes. The set of methods implemented by a class constitutes the behavior of its instances. Whenever there is a change in the values of its attributes, we say that the state of an object has changed.
 
-18. STRATEGY DESIGN PATTERN
-THE STRATEGY DESIGN PATTERN SEEMS TO BE THE SIMPLEST OF ALL DESIGN PATTERNS, YET IT PROVIDES GREAT FLEXIBILITY TO YOUR CODE. THIS PATTERN IS USED ALMOST EVERYWHERE, EVEN IN CONJUNCTION WITH THE OTHER DESIGN PATTERNS. THE STRATEGY DESIGN PATTERN DEFINES A FAMILY OF ALGORITHMS, ENCAPSULATING EACH ONE, AND MAKING THEM INTERCHANGEABLE. STRATEGY LETS THE ALGORITHM VARY INDEPENDENTLY FROM THE CLIENTS THAT USE IT.
+18. Strategy design pattern
+The strategy design pattern seems to be the simplest of all design patterns, yet it provides great flexibility to your code. This pattern is used almost everywhere, even in conjunction with the other design patterns. The strategy design pattern defines a family of algorithms, encapsulating each one, and making them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
 
-19. COMMAND DESIGN PATTERN
-THE COMMAND DESIGN PATTERN IS A BEHAVIORAL DESIGN PATTERN AND HELPS TO DECOUPLES THE INVOKER FROM THE RECEIVER OF A REQUEST. THE INTENT OF THE COMMAND DESIGN PATTERN IS TO ENCAPSULATE A REQUEST AS AN OBJECT, THEREBY LETTING THE DEVELOPER TO PARAMETERIZE CLIENTS WITH DIFFERENT REQUESTS, QUEUE OR LOG REQUESTS, AND SUPPORT UNDOABLE OPERATIONS.
+19. Command design pattern
+The command design pattern is a behavioral design pattern and helps to decouples the invoker from the receiver of a request. The intent of the command design pattern is to encapsulate a request as an object, thereby letting the developer to parameterize clients with different requests, queue or log requests, and support undoable operations.
 
-20. INTERPRETER DESIGN PATTERN
-THE INTERPRETER DESIGN PATTERN IS A HEAVY-DUTY PATTERN. IT’S ALL ABOUT PUTTING TOGETHER YOUR OWN PROGRAMMING LANGUAGE, OR HANDLING AN EXISTING ONE, BY CREATING AN INTERPRETER FOR THAT LANGUAGE. GIVEN A LANGUAGE, WE CAN DEFINE A REPRESENTATION FOR ITS GRAMMAR ALONG WITH AN INTERPRETER THAT USES THE REPRESENTATION TO INTERPRET SENTENCES IN THE LANGUAGE.
+20. Interpreter design pattern
+The interpreter design pattern is a heavy-duty pattern. It’s all about putting together your own programming language, or handling an existing one, by creating an interpreter for that language. Given a language, we can define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 
-21. DECORATOR DESIGN PATTERN
-THE INTENT OF THE DECORATOR DESIGN PATTERN IS TO ATTACH ADDITIONAL RESPONSIBILITIES TO AN OBJECT DYNAMICALLY. DECORATORS PROVIDE A FLEXIBLE ALTERNATIVE TO SUB-CLASSING FOR EXTENDING FUNCTIONALITY. THE PATTERN IS USED TO EXTEND THE FUNCTIONALITY OF AN OBJECT DYNAMICALLY WITHOUT HAVING TO CHANGE THE ORIGINAL CLASS SOURCE OR USING INHERITANCE. THIS IS ACCOMPLISHED BY CREATING AN OBJECT WRAPPER REFERRED TO AS A DECORATOR AROUND THE ACTUAL OBJECT.
+21. Decorator design pattern
+The intent of the decorator design pattern is to attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality. The pattern is used to extend the functionality of an object dynamically without having to change the original class source or using inheritance. This is accomplished by creating an object wrapper referred to as a decorator around the actual object.
 
-22. ITERATOR DESIGN PATTERN
-THE INTENT OF THE ITERATOR DESIGN PATTERN IS TO PROVIDE A WAY TO ACCESS THE ELEMENTS OF AN AGGREGATE OBJECT SEQUENTIALLY WITHOUT EXPOSING ITS UNDERLYING REPRESENTATION. HE ITERATOR PATTERN ALLOWS A CLIENT OBJECT TO ACCESS THE CONTENTS OF A CONTAINER IN A SEQUENTIAL MANNER, WITHOUT HAVING ANY KNOWLEDGE ABOUT THE INTERNAL REPRESENTATION OF ITS CONTENTS.
+22. Iterator design pattern
+The intent of the iterator design pattern is to provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation. He iterator pattern allows a client object to access the contents of a container in a sequential manner, without having any knowledge about the internal representation of its contents.
 
-23. VISITOR DESIGN PATTERN
-THE VISITOR DESIGN PATTERN PROVIDES YOU WITH A WAY TO ADD NEW OPERATIONS ON THE OBJECTS WITHOUT CHANGING THE CLASSES OF THE ELEMENTS, ESPECIALLY WHEN THE OPERATIONS CHANGE QUITE OFTEN. THE INTENT OF THE VISITOR DESIGN PATTERN IS TO REPRESENT AN OPERATION TO BE PERFORMED ON THE ELEMENTS OF AN OBJECT STRUCTURE. VISITOR LETS YOU DEFINE A NEW OPERATION WITHOUT CHANGING THE CLASSES OF THE ELEMENTS ON WHICH IT OPERATES.
+23. Visitor design pattern
+The visitor design pattern provides you with a way to add new operations on the objects without changing the classes of the elements, especially when the operations change quite often. The intent of the visitor design pattern is to represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
-24. COLLECTIONS DESIGN PATTERN
+24. Collections design pattern
 
-25. COMBINED DESIGN PATTERN
+25. Combined design pattern
 
-26. COMBINING DESIGN PATTERN
+26. Combining design pattern
 
-27. DUCKS DESIGN PATTERN
+27. Ducks design pattern
 
-28. ITERENUM DESIGN PATTERN
+28. Iterenum design pattern
 
-29. TEMPLATEMETHOD DESIGN PATTERN
+29. Templatemethod design pattern
 
-30. DELEGATION DESIGN PATTERN 
-
-
+30. Delegation design pattern 
 
 
 
-SOLID DESIGN PRINCIPLES
+
+
+Solid design principles
 ———————————————————————
 
 
-IN COMPUTER PROGRAMMING, SOLID (SINGLE RESPONSIBILITY, OPEN-CLOSED, LISKOV SUBSTITUTION, INTERFACE SEGREGATION AND DEPENDENCY INVERSION) IS A MNEMONIC ACRONYM INTRODUCED BY MICHAEL FEATHERS FOR THE "FIRST FIVE PRINCIPLES" NAMED BY ROBERT C. MARTIN IN THE EARLY 2000S[3] THAT STANDS FOR FIVE BASIC PRINCIPLES OF OBJECT-ORIENTED PROGRAMMING AND DESIGN. THE INTENTION IS THAT THESE PRINCIPLES, WHEN APPLIED TOGETHER, WILL MAKE IT MORE LIKELY THAT A PROGRAMMER WILL CREATE A SYSTEM THAT IS EASY TO MAINTAIN AND EXTEND OVER TIME.[3] THE PRINCIPLES OF SOLID ARE GUIDELINES THAT CAN BE APPLIED WHILE WORKING ON SOFTWARE TO REMOVE CODE SMELLS BY PROVIDING A FRAMEWORK THROUGH WHICH THE PROGRAMMER MAY REFACTOR THE SOFTWARE'S SOURCE CODE UNTIL IT IS BOTH LEGIBLE AND EXTENSIBLE. IT IS PART OF AN OVERALL STRATEGY OF AGILE AND ADAPTIVE SOFTWARE DEVELOPMENT.
+In computer programming, solid (single responsibility, open-closed, liskov substitution, interface segregation and dependency inversion) is a mnemonic acronym introduced by michael feathers for the "First five principles" named by robert c. Martin in the early 2000s[3] that stands for five basic principles of object-oriented programming and design. The intention is that these principles, when applied together, will make it more likely that a programmer will create a system that is easy to maintain and extend over time.[3] the principles of solid are guidelines that can be applied while working on software to remove code smells by providing a framework through which the programmer may refactor the software's source code until it is both legible and extensible. It is part of an overall strategy of agile and adaptive software development.
 
 
-1. SINGLE RESPONSIBILITY PRINCIPLE (S)
+1. Single responsibility principle (s)
 ——————————————————————————————————————
-A CLASS SHOULD HAVE ONLY A SINGLE RESPONSIBILITY (I.E. ONLY ONE POTENTIAL CHANGE IN THE SOFTWARE'S SPECIFICATION SHOULD BE ABLE TO AFFECT THE SPECIFICATION OF THE CLASS)
+A class should have only a single responsibility (I.E. Only one potential change in the software's specification should be able to affect the specification of the class)
 
-2. OPEN/ CLOSE PRINCIPLE (O)
+2. Open/ close principle (o)
 ————————————————————————————
-“SOFTWARE ENTITIES … SHOULD BE OPEN FOR EXTENSION, BUT CLOSED FOR MODIFICATION.”
+“software entities … should be open for extension, but closed for modification.”
 
-3. LISKOV SUBSTITUTION PRINCIPLE (L)
+3. Liskov substitution principle (l)
 ————————————————————————————————————
-“OBJECTS IN A PROGRAM SHOULD BE REPLACEABLE WITH INSTANCES OF THEIR SUBTYPES WITHOUT ALTERING THE CORRECTNESS OF THAT PROGRAM.” SEE ALSO DESIGN BY CONTRACT.
+“objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.” see also design by contract.
 
-4. INTERFACE SEGREGATION PRINCIPLE (I)
+4. Interface segregation principle (I)
 ——————————————————————————————————————
-“MANY CLIENT-SPECIFIC INTERFACES ARE BETTER THAN ONE GENERAL-PURPOSE INTERFACE.”
+“many client-specific interfaces are better than one general-purpose interface.”
 
-5. DEPENDENCY INVERSION PRINCIPLE (D)
+5. Dependency inversion principle (d)
 —————————————————————————————————————
-ONE SHOULD DEPEND UPON ABSTRACTIONS, [NOT] CONCRETIONS.
+One should depend upon abstractions, [not] concretions.
 
 
 
 
 
 
-THE LAW OF DEMETER (LOD)
+The law of demeter (lod)
 ————————————————————————
 
-THE LAW OF DEMETER (LOD) OR PRINCIPLE OF LEAST KNOWLEDGE IS A DESIGN GUIDELINE FOR DEVELOPING SOFTWARE, PARTICULARLY OBJECT-ORIENTED PROGRAMS. IN ITS GENERAL FORM, THE LOD IS A SPECIFIC CASE OF LOOSE COUPLING. THE GUIDELINES CAN BE SUCCINCTLY SUMMARIZED IN EACH OF THE FOLLOWING WAYS:
+The law of demeter (lod) or principle of least knowledge is a design guideline for developing software, particularly object-oriented programs. In its general form, the lod is a specific case of loose coupling. The guidelines can be succinctly summarized in each of the following ways:
 
-A. EACH UNIT SHOULD HAVE ONLY LIMITED KNOWLEDGE ABOUT OTHER UNITS: ONLY UNITS "CLOSELY" RELATED TO THE CURRENT UNIT.
-B. EACH UNIT SHOULD ONLY TALK TO ITS FRIENDS; DON'T TALK TO STRANGERS.
-C. ONLY TALK TO YOUR IMMEDIATE FRIENDS.
-
-
+A. Each unit should have only limited knowledge about other units: only units "Closely" related to the current unit.
+B. Each unit should only talk to its friends; don't talk to strangers.
+C. Only talk to your immediate friends.
 
 
 
 
-DOMAIN DRIVEN DESIGN
 
-EVENT DRIVEN DESIGN 
+
+Domain driven design
+
+Event driven design 
 
 
 
 ————————————————————————————————————————————————————————————————————————————————————————
 
 ——————————————————————————
-CREATIONAL DESIGN PATTERNS
+Creational design patterns
 ——————————————————————————
 
-THESE DESIGN PATTERNS ARE ALL ABOUT CLASS INSTANTIATION. THIS PATTERN CAN BE FURTHER DIVIDED INTO CLASS-CREATION PATTERNS AND OBJECT-CREATIONAL PATTERNS. WHILE CLASS-CREATION PATTERNS USE INHERITANCE EFFECTIVELY IN THE INSTANTIATION PROCESS, OBJECT-CREATION PATTERNS USE DELEGATION EFFECTIVELY TO GET THE JOB DONE.
+These design patterns are all about class instantiation. This pattern can be further divided into class-creation patterns and object-creational patterns. While class-creation patterns use inheritance effectively in the instantiation process, object-creation patterns use delegation effectively to get the job done.
 
 
-ABSTRACT FACTORY
+Abstract factory
 ————————————————
-CREATES AN INSTANCE OF SEVERAL FAMILIES OF CLASSES
+Creates an instance of several families of classes
 
-BUILDER
-SEPARATES OBJECT CONSTRUCTION FROM ITS REPRESENTATION
+Builder
+Separates object construction from its representation
 
-FACTORY METHOD
-CREATES AN INSTANCE OF SEVERAL DERIVED CLASSES
+Factory method
+Creates an instance of several derived classes
 
-OBJECT POOL
-AVOID EXPENSIVE ACQUISITION AND RELEASE OF RESOURCES BY RECYCLING OBJECTS THAT ARE NO LONGER IN USE
+Object pool
+Avoid expensive acquisition and release of resources by recycling objects that are no longer in use
 
-PROTOTYPE
+Prototype
 —————————
-A FULLY INITIALIZED INSTANCE TO BE COPIED OR CLONED
+A fully initialized instance to be copied or cloned
 
-SINGLETON
-A CLASS OF WHICH ONLY A SINGLE INSTANCE CAN EXIST
+Singleton
+A class of which only a single instance can exist
 
 
 ——————————————————————————
-STRUCTURAL DESIGN PATTERNS
+Structural design patterns
 ——————————————————————————
 
-THESE DESIGN PATTERNS ARE ALL ABOUT CLASS AND OBJECT COMPOSITION. STRUCTURAL CLASS-CREATION PATTERNS USE INHERITANCE TO COMPOSE INTERFACES. STRUCTURAL OBJECT-PATTERNS DEFINE WAYS TO COMPOSE OBJECTS TO OBTAIN NEW FUNCTIONALITY.
+These design patterns are all about class and object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
 
 
-ADAPTER
+Adapter
 ———————
-MATCH INTERFACES OF DIFFERENT CLASSES
+Match interfaces of different classes
 
-BRIDGE
-SEPARATES AN OBJECT’S INTERFACE FROM ITS IMPLEMENTATION
+Bridge
+Separates an object’s interface from its implementation
 
-COMPOSITE
-A TREE STRUCTURE OF SIMPLE AND COMPOSITE OBJECTS
+Composite
+A tree structure of simple and composite objects
 
-DECORATOR
-ADD RESPONSIBILITIES TO OBJECTS DYNAMICALLY
+Decorator
+Add responsibilities to objects dynamically
 
-FACADE
-A SINGLE CLASS THAT REPRESENTS AN ENTIRE SUBSYSTEM
+Facade
+A single class that represents an entire subsystem
 
-FLYWEIGHT
-A FINE-GRAINED INSTANCE USED FOR EFFICIENT SHARING
+Flyweight
+A fine-grained instance used for efficient sharing
 
-PRIVATE CLASS DATA
-RESTRICTS ACCESSOR/MUTATOR ACCESS
+Private class data
+Restricts accessor/mutator access
 
-PROXY
-AN OBJECT REPRESENTING ANOTHER OBJECT
+Proxy
+An object representing another object
 
 
 
 ——————————————————————————
-BEHAVIORAL DESIGN PATTERNS
+Behavioral design patterns
 ——————————————————————————
 
 
-THESE DESIGN PATTERNS ARE ALL ABOUT CLASS'S OBJECTS COMMUNICATION. BEHAVIORAL PATTERNS ARE THOSE PATTERNS THAT ARE MOST SPECIFICALLY CONCERNED WITH COMMUNICATION BETWEEN OBJECTS.
+These design patterns are all about class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
 
-CHAIN OF RESPONSIBILITY
-A WAY OF PASSING A REQUEST BETWEEN A CHAIN OF OBJECTS
+Chain of responsibility
+A way of passing a request between a chain of objects
 
-COMMAND
-ENCAPSULATE A COMMAND REQUEST AS AN OBJECT
+Command
+Encapsulate a command request as an object
 
-INTERPRETER
-A WAY TO INCLUDE LANGUAGE ELEMENTS IN A PROGRAM
+Interpreter
+A way to include language elements in a program
 
-ITERATOR
-SEQUENTIALLY ACCESS THE ELEMENTS OF A COLLECTION
+Iterator
+Sequentially access the elements of a collection
 
-MEDIATOR
-DEFINES SIMPLIFIED COMMUNICATION BETWEEN CLASSES
+Mediator
+Defines simplified communication between classes
 
-MEMENTO
-CAPTURE AND RESTORE AN OBJECT'S INTERNAL STATE
+Memento
+Capture and restore an object's internal state
 
-NULL OBJECT
-DESIGNED TO ACT AS A DEFAULT VALUE OF AN OBJECT
+Null object
+Designed to act as a default value of an object
 
-OBSERVER
-A WAY OF NOTIFYING CHANGE TO A NUMBER OF CLASSES
+Observer
+A way of notifying change to a number of classes
 
-STATE
-ALTER AN OBJECT'S BEHAVIOR WHEN ITS STATE CHANGES
+State
+Alter an object's behavior when its state changes
 
-STRATEGY
-ENCAPSULATES AN ALGORITHM INSIDE A CLASS
+Strategy
+Encapsulates an algorithm inside a class
 
-TEMPLATE METHOD
-DEFER THE EXACT STEPS OF AN ALGORITHM TO A SUBCLASS
+Template method
+Defer the exact steps of an algorithm to a subclass
 
-VISITOR
-DEFINES A NEW OPERATION TO A CLASS WITHOUT CHANGE
+Visitor
+Defines a new operation to a class without change
 ———————————————————————————————————————————————————————————————————————————————————————
 
 
 ———————————————————————————————————————————————————————————————————————————————————————
-SOFTWARE DESIGN 
+Software design 
 ———————————————
 
-COMMAND–QUERY SEPARATION (CQRS) DESIGN // CONTRACT (DBC) METHODOLOGY
+Command–query separation (cqrs) design // contract (dbc) methodology
 ———————————————————————————————————————————————————————————————————————————————————————
 
 
 
 
-SOFTWARE DEVELOPMENT ANTIPATTERNS
+Software development antipatterns
 —————————————————————————————————
 
-THE BLOB
+The blob
 ————————
-PROCEDURAL-STYLE DESIGN LEADS TO ONE OBJECT WITH A LION’S SHARE OF THE RESPONSIBILITIES, WHILE MOST OTHER OBJECTS ONLY HOLD DATA OR EXECUTE SIMPLE PROCESSES. THE SOLUTION INCLUDES REFACTORING THE DESIGN TO DISTRIBUTE RESPONSIBILITIES MORE UNIFORMLY AND ISOLATING THE EFFECT OF CHANGES.
+Procedural-style design leads to one object with a lion’s share of the responsibilities, while most other objects only hold data or execute simple processes. The solution includes refactoring the design to distribute responsibilities more uniformly and isolating the effect of changes.
 
-CONTINUOUS OBSOLESCENCE
+Continuous obsolescence
 ————————————————————————
-TECHNOLOGY IS CHANGING SO RAPIDLY THAT DEVELOPERS OFTEN HAVE TROUBLE KEEPING UP WITH CURRENT VERSIONS OF SOFTWARE AND FINDING COMBINATIONS OF PRODUCT RELEASES THAT WORK TOGETHER. GIVEN THAT EVERY COMMERCIAL PRODUCT LINE EVOLVES THROUGH NEW RELEASES, THE SITUATION IS BECOMING MORE DIFFICULT FOR DEVELOPERS TO COPE WITH. FINDING COMPATIBLE RELEASES OF PRODUCTS THAT SUCCESSFULLY INTEROPERATE IS EVEN HARDER.
+Technology is changing so rapidly that developers often have trouble keeping up with current versions of software and finding combinations of product releases that work together. Given that every commercial product line evolves through new releases, the situation is becoming more difficult for developers to cope with. Finding compatible releases of products that successfully interoperate is even harder.
 
-LAVA FLOW
+Lava flow
 ————————————————
-DEAD CODE AND FORGOTTEN DESIGN INFORMATION IS FROZEN IN AN EVER-CHANGING DESIGN. THIS IS ANALOGOUS TO A LAVA FLOW WITH HARDENING GLOBULES OF ROCKY MATERIAL. THE REFACTORED SOLUTION INCLUDES A CONFIGURATION MANAGEMENT PROCESS THAT ELIMINATES DEAD CODE AND EVOLVES OR REFACTORS DESIGN TOWARD INCREASING QUALITY.
+Dead code and forgotten design information is frozen in an ever-changing design. This is analogous to a lava flow with hardening globules of rocky material. The refactored solution includes a configuration management process that eliminates dead code and evolves or refactors design toward increasing quality.
 
-AMBIGUOUS VIEWPOINT
+Ambiguous viewpoint
 ————————————————
-OBJECT-ORIENTED ANALYSIS AND DESIGN (OOA&D) MODELS ARE OFTEN PRESENTED WITHOUT CLARIFYING THE VIEWPOINT REPRESENTED BY THE MODEL. BY DEFAULT, OOA&D MODELS DENOTE AN IMPLEMENTATION VIEWPOINT THAT IS POTENTIALLY THE LEAST USEFUL. MIXED VIEWPOINTS DON’T ALLOW THE FUNDAMENTAL SEPARATION OF INTERFACES FROM IMPLEMENTATION DETAILS, WHICH IS ONE OF THE PRIMARY BENEFITS OF THE OBJECT-ORIENTED PARADIGM.
+Object-oriented analysis and design (ooa&d) models are often presented without clarifying the viewpoint represented by the model. By default, ooa&d models denote an implementation viewpoint that is potentially the least useful. Mixed viewpoints don’t allow the fundamental separation of interfaces from implementation details, which is one of the primary benefits of the object-oriented paradigm.
 
-FUNCTIONAL DECOMPOSITION
+Functional decomposition
 ————————————————————————
-THIS ANTIPATTERN IS THE OUTPUT OF EXPERIENCED, NONOBJECT-ORIENTED DEVELOPERS WHO DESIGN AND IMPLEMENT AN APPLICATION IN AN OBJECT-ORIENTED LANGUAGE. THE RESULTING CODE RESEMBLES A STRUCTURAL LANGUAGE (PASCAL, FORTRAN) IN CLASS STRUCTURE. IT CAN BE INCREDIBLY COMPLEX AS SMART PROCEDURAL DEVELOPERS DEVISE VERY “CLEVER” WAYS TO REPLICATE THEIR TIME-TESTED METHODS IN AN OBJECT-ORIENTED ARCHITECTURE.
+This antipattern is the output of experienced, nonobject-oriented developers who design and implement an application in an object-oriented language. The resulting code resembles a structural language (pascal, fortran) in class structure. It can be incredibly complex as smart procedural developers devise very “clever” ways to replicate their time-tested methods in an object-oriented architecture.
 
-POLTERGEISTS
+Poltergeists
 ————————————————
-POLTERGEISTS ARE CLASSES WITH VERY LIMITED ROLES AND EFFECTIVE LIFE CYCLES. THEY OFTEN START PROCESSES FOR OTHER OBJECTS. THE REFACTORED SOLUTION INCLUDES A REALLOCATION OF RESPONSIBILITIES TO LONGER-LIVED OBJECTS THAT ELIMINATE THE POLTERGEISTS.
+Poltergeists are classes with very limited roles and effective life cycles. They often start processes for other objects. The refactored solution includes a reallocation of responsibilities to longer-lived objects that eliminate the poltergeists.
 
-BOAT ANCHOR
+Boat anchor
 ————————————————
-A BOAT ANCHOR IS A PIECE OF SOFTWARE OR HARDWARE THAT SERVES NO USEFUL PURPOSE ON THE CURRENT PROJECT. OFTEN, THE BOAT ANCHOR IS A COSTLY ACQUISITION, WHICH MAKES THE PURCHASE EVEN MORE IRONIC.
+A boat anchor is a piece of software or hardware that serves no useful purpose on the current project. Often, the boat anchor is a costly acquisition, which makes the purchase even more ironic.
 
-GOLDEN HAMMER
+Golden hammer
 ————————————————
-A GOLDEN HAMMER IS A FAMILIAR TECHNOLOGY OR CONCEPT APPLIED OBSESSIVELY TO MANY SOFTWARE PROBLEMS. THE SOLUTION INVOLVES EXPANDING THE KNOWLEDGE OF DEVELOPERS THROUGH EDUCATION, TRAINING, AND BOOK STUDY GROUPS TO EXPOSE DEVELOPERS TO ALTERNATIVE TECHNOLOGIES AND APPROACHES.
+A golden hammer is a familiar technology or concept applied obsessively to many software problems. The solution involves expanding the knowledge of developers through education, training, and book study groups to expose developers to alternative technologies and approaches.
 
-DEAD END
+Dead end
 ————————
-A DEAD END IS REACHED BY MODIFYING A REUSABLE COMPONENT IF THE MODIFIED COMPONENT IS NO LONGER MAINTAINED AND SUPPORTED BY THE SUPPLIER. WHEN THESE MODIFICATIONS ARE MADE, THE SUPPORT BURDEN TRANSFERS TO THE APPLICATION SYSTEM DEVELOPERS AND MAINTAINERS. IMPROVEMENTS IN THE REUSABLE COMPONENT ARE NOT EASILY INTEGRATED, AND SUPPORT PROBLEMS CAN BE BLAMED UPON THE MODIFICATION.
+A dead end is reached by modifying a reusable component if the modified component is no longer maintained and supported by the supplier. When these modifications are made, the support burden transfers to the application system developers and maintainers. Improvements in the reusable component are not easily integrated, and support problems can be blamed upon the modification.
 
-SPAGHETTI CODE
+Spaghetti code
 ——————————————
-AD HOC SOFTWARE STRUCTURE MAKES IT DIFFICULT TO EXTEND AND OPTIMIZE CODE. FREQUENT CODE REFACTORING CAN IMPROVE SOFTWARE STRUCTURE, SUPPORT SOFTWARE MAINTENANCE, AND ENABLE ITERATIVE DEVELOPMENT.
+Ad hoc software structure makes it difficult to extend and optimize code. Frequent code refactoring can improve software structure, support software maintenance, and enable iterative development.
 
-INPUT KLUDGE
+Input kludge
 ————————————
-SOFTWARE THAT FAILS STRAIGHTFORWARD BEHAVIORAL TESTS MAY BE AN EXAMPLE OF AN INPUT KLUDGE, WHICH OCCURS WHEN AD HOC ALGORITHMS ARE EMPLOYED FOR HANDLING PROGRAM INPUT.
+Software that fails straightforward behavioral tests may be an example of an input kludge, which occurs when ad hoc algorithms are employed for handling program input.
 
-WALKING THROUGH A MINEFIELD
+Walking through a minefield
 ———————————————————————————
-USING TODAY’S SOFTWARE TECHNOLOGY IS ANALOGOUS TO WALKING THROUGH A HIGH-TECH MINE FIELD. NUMEROUS BUGS ARE FOUND IN RELEASED SOFTWARE PRODUCTS; IN FACT, EXPERTS ESTIMATE THAT ORIGINAL SOURCE CODE CONTAINS TWO TO FIVE BUGS PER LINE OF CODE.
+Using today’s software technology is analogous to walking through a high-tech mine field. Numerous bugs are found in released software products; in fact, experts estimate that original source code contains two to five bugs per line of code.
 
-CUT-AND-PASTE PROGRAMMING
+Cut-and-paste programming
 —————————————————————————
-CODE REUSED BY COPYING SOURCE STATEMENTS LEADS TO SIGNIFICANT MAINTENANCE PROBLEMS. ALTERNATIVE FORMS OF REUSE, INCLUDING BLACK-BOX REUSE, REDUCE MAINTENANCE ISSUES BY HAVING COMMON SOURCE CODE, TESTING, AND DOCUMENTATION.
+Code reused by copying source statements leads to significant maintenance problems. Alternative forms of reuse, including black-box reuse, reduce maintenance issues by having common source code, testing, and documentation.
 
-MUSHROOM MANAGEMENT
+Mushroom management
 ———————————————————
-IN SOME ARCHITECTURE AND MANAGEMENT CIRCLES, THERE IS AN EXPLICIT POLICY TO KEEP SYSTEM DEVELOPERS ISOLATED FROM THE SYSTEM’S END USERS. REQUIREMENTS ARE PASSED SECOND-HAND THROUGH INTERMEDIARIES, INCLUDING ARCHITECTS, MANAGERS, OR REQUIREMENTS ANALYSTS.
+In some architecture and management circles, there is an explicit policy to keep system developers isolated from the system’s end users. Requirements are passed second-hand through intermediaries, including architects, managers, or requirements analysts.
 
 
 
 
-SOFTWARE ARCHITECTURE ANTIPATTERNS
+Software architecture antipatterns
 ——————————————————————————————————
 
-AUTOGENERATED STOVEPIPE
+Autogenerated stovepipe
 ———————————————————————
-THIS ANTIPATTERN OCCURS WHEN MIGRATING AN EXISTING SOFTWARE SYSTEM TO A DISTRIBUTED INFRASTRUCTURE. AN AUTOGENERATED STOVEPIPE ARISES WHEN CONVERTING THE EXISTING SOFTWARE INTERFACES TO DISTRIBUTED INTERFACES. IF THE SAME DESIGN IS USED FOR DISTRIBUTED COMPUTING, A NUMBER OF PROBLEMS EMERGE.
+This antipattern occurs when migrating an existing software system to a distributed infrastructure. An autogenerated stovepipe arises when converting the existing software interfaces to distributed interfaces. If the same design is used for distributed computing, a number of problems emerge.
 
-STOVEPIPE ENTERPRISE
+Stovepipe enterprise
 ————————————————————
-A STOVEPIPE SYSTEM IS CHARACTERIZED BY A SOFTWARE STRUCTURE THAT INHIBITS CHANGE. THE REFACTORED SOLUTION DESCRIBES HOW TO ABSTRACT SUBSYSTEM AND COMPONENTS TO ACHIEVE AN IMPROVED SYSTEM STRUCTURE. THE STOVEPIPE ENTERPRISE ANTIPATTERN IS CHARACTERIZED BY A LACK OF COORDINATION AND PLANNING ACROSS A SET OF SYSTEMS.
+A stovepipe system is characterized by a software structure that inhibits change. The refactored solution describes how to abstract subsystem and components to achieve an improved system structure. The stovepipe enterprise antipattern is characterized by a lack of coordination and planning across a set of systems.
 
-JUMBLE
+Jumble
 ——————
-WHEN HORIZONTAL AND VERTICAL DESIGN ELEMENTS ARE INTERMIXED, AN UNSTABLE ARCHITECTURE RESULTS. THE INTERMINGLING OF HORIZONTAL AND VERTICAL DESIGN ELEMENTS LIMITS THE REUSABILITY AND ROBUSTNESS OF THE ARCHITECTURE AND THE SYSTEM SOFTWARE COMPONENTS.
+When horizontal and vertical design elements are intermixed, an unstable architecture results. The intermingling of horizontal and vertical design elements limits the reusability and robustness of the architecture and the system software components.
 
-STOVEPIPE SYSTEM
+Stovepipe system
 ————————————————
-SUBSYSTEMS ARE INTEGRATED IN AN AD HOC MANNER USING MULTIPLE INTEGRATION STRATEGIES AND MECHANISMS, AND ALL ARE INTEGRATED POINT TO POINT. THE INTEGRATION APPROACH FOR EACH PAIR OF SUBSYSTEMS IS NOT EASILY LEVERAGED TOWARD THAT OF OTHER SUBSYSTEMS. THE STOVEPIPE SYSTEM ANTIPATTERN IS THE SINGLE-SYSTEM ANALOGY OF STOVEPIPE ENTERPRISE, AND IS CONCERNED WITH HOW THE SUBSYSTEMS ARE COORDINATED WITHIN A SINGLE SYSTEM.
+Subsystems are integrated in an ad hoc manner using multiple integration strategies and mechanisms, and all are integrated point to point. The integration approach for each pair of subsystems is not easily leveraged toward that of other subsystems. The stovepipe system antipattern is the single-system analogy of stovepipe enterprise, and is concerned with how the subsystems are coordinated within a single system.
 
-COVER YOUR ASSETS
+Cover your assets
 —————————————————
-DOCUMENT-DRIVEN SOFTWARE PROCESSES OFTEN PRODUCE LESS-THAN-USEFUL REQUIREMENTS AND SPECIFICATIONS BECAUSE THE AUTHORS EVADE MAKING IMPORTANT DECISIONS. IN ORDER TO AVOID MAKING A MISTAKE, THE AUTHORS TAKE A SAFER COURSE AND ELABORATE UPON ALTERNATIVES.
+Document-driven software processes often produce less-than-useful requirements and specifications because the authors evade making important decisions. In order to avoid making a mistake, the authors take a safer course and elaborate upon alternatives.
 
-VENDOR LOCK-IN
+Vendor lock-in
 ——————————————
-VENDOR LOCK-IN OCCURS IN SYSTEMS THAT ARE HIGHLY DEPENDENT UPON PROPRIETARY ARCHITECTURES. THE USE OF ARCHITECTURAL ISOLATION LAYERS CAN PROVIDE INDEPENDENCE FROM VENDOR-SPECIFIC SOLUTIONS.
+Vendor lock-in occurs in systems that are highly dependent upon proprietary architectures. The use of architectural isolation layers can provide independence from vendor-specific solutions.
 
-WOLF TICKET
+Wolf ticket
 ———————————
-A WOLF TICKET IS A PRODUCT THAT CLAIMS OPENNESS AND CONFORMANCE TO STANDARDS THAT HAVE NO ENFORCEABLE MEANING. THE PRODUCTS ARE DELIVERED WITH PROPRIETARY INTERFACES THAT MAY VARY SIGNIFICANTLY FROM THE PUBLISHED STANDARD.
+A wolf ticket is a product that claims openness and conformance to standards that have no enforceable meaning. The products are delivered with proprietary interfaces that may vary significantly from the published standard.
 
-ARCHITECTURE BY IMPLICATION
+Architecture by implication
 ———————————————————————————
-MANAGEMENT OF RISK IN FOLLOW-ON SYSTEM DEVELOPMENT IS OFTEN OVERLOOKED DUE TO OVERCONFIDENCE AND RECENT SYSTEM SUCCESSES. A GENERAL ARCHITECTURE APPROACH THAT IS TAILORED TO EACH APPLICATION SYSTEM CAN HELP IDENTIFY UNIQUE REQUIREMENTS AND RISK AREAS.
+Management of risk in follow-on system development is often overlooked due to overconfidence and recent system successes. A general architecture approach that is tailored to each application system can help identify unique requirements and risk areas.
 
-WARM BODIES
+Warm bodies
 ———————————
-SOFTWARE PROJECTS ARE OFTEN STAFFED WITH PROGRAMMERS WITH WIDELY VARYING SKILLS AND PRODUCTIVITY LEVELS. MANY OF THESE PEOPLE MAY BE ASSIGNED TO MEET STAFF SIZE OBJECTIVES (SO-CALLED “WARM BODIES”). SKILLED PROGRAMMERS ARE ESSENTIAL TO THE SUCCESS OF A SOFTWARE PROJECT. SO-CALLED HEROIC PROGRAMMERS ARE EXCEPTIONALLY PRODUCTIVE, BUT AS FEW AS 1 IN 20 HAVE THIS TALENT. THEY PRODUCE AN ORDER OF MAGNITUDE MORE WORKING SOFTWARE THAN AN AVERAGE PROGRAMMER.
+Software projects are often staffed with programmers with widely varying skills and productivity levels. Many of these people may be assigned to meet staff size objectives (so-called “warm bodies”). Skilled programmers are essential to the success of a software project. So-called heroic programmers are exceptionally productive, but as few as 1 in 20 have this talent. They produce an order of magnitude more working software than an average programmer.
 
-DESIGN BY COMMITTEE
+Design by committee
 ———————————————————
-THE CLASSIC ANTIPATTERN FROM STANDARDS BODIES, DESIGN BY COMMITTEE CREATES OVERLY COMPLEX ARCHITECTURES THAT LACK COHERENCE. CLARIFICATION OF ARCHITECTURAL ROLES AND IMPROVED PROCESS FACILITATION CAN REFACTOR BAD MEETING PROCESSES INTO HIGHLY PRODUCTIVE EVENTS.
+The classic antipattern from standards bodies, design by committee creates overly complex architectures that lack coherence. Clarification of architectural roles and improved process facilitation can refactor bad meeting processes into highly productive events.
 
-SWISS ARMY KNIFE
+Swiss army knife
 ————————————————
-A SWISS ARMY KNIFE IS AN EXCESSIVELY COMPLEX CLASS INTERFACE. THE DESIGNER ATTEMPTS TO PROVIDE FOR ALL POSSIBLE USES OF THE CLASS. IN THE ATTEMPT, HE OR SHE ADDS A LARGE NUMBER OF INTERFACE SIGNATURES IN A FUTILE ATTEMPT TO MEET ALL POSSIBLE NEEDS.
+A swiss army knife is an excessively complex class interface. The designer attempts to provide for all possible uses of the class. In the attempt, he or she adds a large number of interface signatures in a futile attempt to meet all possible needs.
 
-REINVENT THE WHEEL
+Reinvent the wheel
 ——————————————————
-THE PERVASIVE LACK OF TECHNOLOGY TRANSFER BETWEEN SOFTWARE PROJECTS LEADS TO SUBSTANTIAL REINVENTION. DESIGN KNOWLEDGE BURIED IN LEGACY ASSETS CAN BE LEVERAGED TO REDUCE TIME-TO-MARKET, COST, AND RISK.
+The pervasive lack of technology transfer between software projects leads to substantial reinvention. Design knowledge buried in legacy assets can be leveraged to reduce time-to-market, cost, and risk.
 
-THE GRAND OLD DUKE OF YORK
+The grand old duke of york
 ——————————————————————————
-EGALITARIAN SOFTWARE PROCESSES OFTEN IGNORE PEOPLE’S TALENTS TO THE DETRIMENT OF THE PROJECT. PROGRAMMING SKILL DOES NOT EQUATE TO SKILL IN DEFINING ABSTRACTIONS. THERE APPEAR TO BE TWO DISTINCT GROUPS INVOLVED IN SOFTWARE DEVELOPMENT: ABSTRACTIONISTS AND THEIR COUNTERPARTS THE IMPLEMENTATIONISTS.
+Egalitarian software processes often ignore people’s talents to the detriment of the project. Programming skill does not equate to skill in defining abstractions. There appear to be two distinct groups involved in software development: abstractionists and their counterparts the implementationists.
 ———————————————————————————————————————————————————————————————————————————————————————
 
 
@@ -442,131 +442,131 @@ EGALITARIAN SOFTWARE PROCESSES OFTEN IGNORE PEOPLE’S TALENTS TO THE DETRIMENT 
 ———————————————————————————————————————————————————————————————————————————————————————
 
 ——————————————
-RULES OF THUMB
+Rules of thumb
 ——————————————
 
 
-STRUCTURAL DESIGN PATTERN
+Structural design pattern
 —————————————————————————
 
-	Adapter makes things work after they're designed; Bridge makes them work before they are.
+	Adapter makes things work after they're designed; bridge makes them work before they are.
 
 	Bridge is designed up-front to let the abstraction and the implementation vary independently. Adapter is retrofitted to make unrelated classes work together.
 
 	Adapter provides a different interface to its subject. Proxy provides the same interface. Decorator provides an enhanced interface.
 
-	Adapter changes an object's interface, Decorator enhances an object's responsibilities. Decorator is thus more transparent to the client. As a consequence, Decorator supports recursive composition, which isn't possible with pure Adapters.
+	Adapter changes an object's interface, decorator enhances an object's responsibilities. Decorator is thus more transparent to the client. As a consequence, decorator supports recursive composition, which isn't possible with pure adapters.
 
-	Composite and Decorator have similar structure diagrams, reflecting the fact that both rely on recursive composition to organize an open-ended number of objects.
+	Composite and decorator have similar structure diagrams, reflecting the fact that both rely on recursive composition to organize an open-ended number of objects.
 
-	Composite can be traversed with Iterator. Visitor can apply an operation over a Composite. Composite could use Chain of responsibility to let components access global properties through their parent. It could also use Decorator to override these properties on parts of the composition. It could use Observer to tie one object structure to another and State to let a component change its behavior as its state changes.
+	Composite can be traversed with iterator. Visitor can apply an operation over a composite. Composite could use chain of responsibility to let components access global properties through their parent. It could also use decorator to override these properties on parts of the composition. It could use observer to tie one object structure to another and state to let a component change its behavior as its state changes.
 
-	Composite can let you compose a Mediator out of smaller pieces through recursive composition.
+	Composite can let you compose a mediator out of smaller pieces through recursive composition.
 
 	Decorator lets you change the skin of an object. Strategy lets you change the guts.
 
-	Decorator is designed to let you add responsibilities to objects without subclassing. Composite's focus is not on embellishment but on representation. These intents are distinct but complementary. Consequently, Composite and Decorator are often used in concert.
-	Decorator and Proxy have different purposes but similar structures. Both describe how to provide a level of indirection to another object, and the implementations keep a reference to the object to which they forward requests.
+	Decorator is designed to let you add responsibilities to objects without subclassing. Composite's focus is not on embellishment but on representation. These intents are distinct but complementary. Consequently, composite and decorator are often used in concert.
+	Decorator and proxy have different purposes but similar structures. Both describe how to provide a level of indirection to another object, and the implementations keep a reference to the object to which they forward requests.
 
-	Facade defines a new interface, whereas Adapter reuses an old interface. Remember that Adapter makes two existing interfaces work together as opposed to defining an entirely new one.
+	Facade defines a new interface, whereas adapter reuses an old interface. Remember that adapter makes two existing interfaces work together as opposed to defining an entirely new one.
 
-	Facade objects are often Singleton because only one Facade object is required.
+	Facade objects are often singleton because only one facade object is required.
 
-	Mediator is similar to Facade in that it abstracts functionality of existing classes. 
-	Mediator abstracts/centralizes arbitrary communication between colleague objects, it routinely "adds value", and it is known/referenced by the colleague objects. In contrast, Facade defines a simpler interface to a subsystem, it doesn't add new functionality, and it is not known by the subsystem classes.
+	Mediator is similar to facade in that it abstracts functionality of existing classes. 
+	Mediator abstracts/centralizes arbitrary communication between colleague objects, it routinely "Adds value", and it is known/referenced by the colleague objects. In contrast, facade defines a simpler interface to a subsystem, it doesn't add new functionality, and it is not known by the subsystem classes.
 
-	Abstract Factory can be used as an alternative to Facade to hide platform-specific classes.
+	Abstract factory can be used as an alternative to facade to hide platform-specific classes.
 
-	Whereas Flyweight shows how to make lots of little objects, Facade shows how to make a single object represent an entire subsystem.
+	Whereas flyweight shows how to make lots of little objects, facade shows how to make a single object represent an entire subsystem.
 
-	Flyweight is often combined with Composite to implement shared leaf nodes.
+	Flyweight is often combined with composite to implement shared leaf nodes.
 
-	Flyweight explains when and how State objects can be shared.
+	Flyweight explains when and how state objects can be shared.
 
 
-CREATIONAL DESIGN PATTERN
+Creational design pattern
 —————————————————————————
 
-	Sometimes creational patterns are competitors: there are cases when either Prototype or Abstract Factory could be used profitably. At other times they are complementary: Abstract Factory might store a set of Prototypes from which to clone and return product objects, Builder can use one of the other patterns to implement which components get built. Abstract Factory, Builder, and Prototype can use Singleton in their implementation.
+	Sometimes creational patterns are competitors: there are cases when either prototype or abstract factory could be used profitably. At other times they are complementary: abstract factory might store a set of prototypes from which to clone and return product objects, builder can use one of the other patterns to implement which components get built. Abstract factory, builder, and prototype can use singleton in their implementation.
 
-	Abstract Factory, Builder, and Prototype define a factory object that's responsible for knowing and creating the class of product objects, and make it a parameter of the system. Abstract Factory has the factory object producing objects of several classes. Builder has the factory object building a complex product incrementally using a correspondingly complex protocol. Prototype has the factory object (aka prototype) building a product by copying a prototype object.
+	Abstract factory, builder, and prototype define a factory object that's responsible for knowing and creating the class of product objects, and make it a parameter of the system. Abstract factory has the factory object producing objects of several classes. Builder has the factory object building a complex product incrementally using a correspondingly complex protocol. Prototype has the factory object (aka prototype) building a product by copying a prototype object.
 
-	Abstract Factory classes are often implemented with Factory Methods, but they can also be implemented using Prototype.
+	Abstract factory classes are often implemented with factory methods, but they can also be implemented using prototype.
 
-	Abstract Factory can be used as an alternative to Facade to hide platform-specific classes.
+	Abstract factory can be used as an alternative to facade to hide platform-specific classes.
 
-	Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product objects (either simple or complex). Builder returns the product as a final step, but as far as the Abstract Factory is concerned, the product gets returned immediately.
+	Builder focuses on constructing a complex object step by step. Abstract factory emphasizes a family of product objects (either simple or complex). Builder returns the product as a final step, but as far as the abstract factory is concerned, the product gets returned immediately.
 
-	Builder is to creation as Strategy is to algorithm.
+	Builder is to creation as strategy is to algorithm.
 
-	Builder often builds a Composite.
+	Builder often builds a composite.
 
-	Factory Methods are usually called within Template methods.
+	Factory methods are usually called within template methods.
 
-	Factory Method: creation through inheritance. Prototype: creation through delegation.
+	Factory method: creation through inheritance. Prototype: creation through delegation.
 
-	Often, designs start out using Factory Method (less complicated, more customizable, subclasses proliferate) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, more complex) as the designer discovers where more flexibility is needed.
+	Often, designs start out using factory method (less complicated, more customizable, subclasses proliferate) and evolve toward abstract factory, prototype, or builder (more flexible, more complex) as the designer discovers where more flexibility is needed.
 
-	Prototype doesn't require subclassing, but it does require an Initialize operation. Factory Method requires subclassing, but doesn't require Initialize.
+	Prototype doesn't require subclassing, but it does require an initialize operation. Factory method requires subclassing, but doesn't require initialize.
 
-	Designs that make heavy use of the Composite and Decorator patterns often can benefit from Prototype as well.
+	Designs that make heavy use of the composite and decorator patterns often can benefit from prototype as well.
 
 
 
-BEHAVIORAL DP
+Behavioral dp
 —————————————
 
 	Behavioral patterns are concerned with the assignment of responsibilities between objects, or, encapsulating behavior in an object and delegating requests to it.
 
-	Chain of responsibility, Command, Mediator, and Observer, address how you can decouple senders and receivers, but with different trade-offs. Chain of responsibility passes a sender request along a chain of potential receivers. Command normally specifies a sender-receiver connection with a subclass. Mediator has senders and receivers reference each other indirectly. Observer defines a very decoupled interface that allows for multiple receivers to be configured at run-time.
+	Chain of responsibility, command, mediator, and observer, address how you can decouple senders and receivers, but with different trade-offs. Chain of responsibility passes a sender request along a chain of potential receivers. Command normally specifies a sender-receiver connection with a subclass. Mediator has senders and receivers reference each other indirectly. Observer defines a very decoupled interface that allows for multiple receivers to be configured at run-time.
 
-	Chain of responsibility can use Command to represent requests as objects.
+	Chain of responsibility can use command to represent requests as objects.
 
-	Chain of responsibility is often applied in conjunction with Composite. There, a component's parent can act as its successor.
+	Chain of responsibility is often applied in conjunction with composite. There, a component's parent can act as its successor.
 
-	Command and Memento act as magic tokens to be passed around and invoked at a later time. In Command, the token represents a request; in Memento, it represents the internal state of an object at a particular time. Polymorphism is important to Command, but not to Memento because its interface is so narrow that a memento can only be passed as a value.
-	Command can use Memento to maintain the state required for an undo operation.
-	MacroCommands can be implemented with Composite.
+	Command and memento act as magic tokens to be passed around and invoked at a later time. In command, the token represents a request; in memento, it represents the internal state of an object at a particular time. Polymorphism is important to command, but not to memento because its interface is so narrow that a memento can only be passed as a value.
+	Command can use memento to maintain the state required for an undo operation.
+	Macrocommands can be implemented with composite.
 
-	A Command that must be copied before being placed on a history list acts as a Prototype.
+	A command that must be copied before being placed on a history list acts as a prototype.
 
-	Interpreter can use State to define parsing contexts.
+	Interpreter can use state to define parsing contexts.
 
-	The abstract syntax tree of Interpreter is a Composite (therefore Iterator and Visitor are also applicable).
+	The abstract syntax tree of interpreter is a composite (therefore iterator and visitor are also applicable).
 
-	Terminal symbols within Interpreter's abstract syntax tree can be shared with Flyweight.
+	Terminal symbols within interpreter's abstract syntax tree can be shared with flyweight.
 
-	Iterator can traverse a Composite. Visitor can apply an operation over a Composite.
+	Iterator can traverse a composite. Visitor can apply an operation over a composite.
 
-	Polymorphic Iterators rely on Factory Methods to instantiate the appropriate Iterator subclass.
+	Polymorphic iterators rely on factory methods to instantiate the appropriate iterator subclass.
 
-	Mediator and Observer are competing patterns. The difference between them is that Observer distributes communication by introducing "observer" and "subject" objects, whereas a Mediator object encapsulates the communication between other objects. We've found it easier to make reusable Observers and Subjects than to make reusable Mediators.
+	Mediator and observer are competing patterns. The difference between them is that observer distributes communication by introducing "Observer" and "Subject" objects, whereas a mediator object encapsulates the communication between other objects. We've found it easier to make reusable observers and subjects than to make reusable mediators.
 
-	On the other hand, Mediator can leverage Observer for dynamically registering colleagues and communicating with them.
+	On the other hand, mediator can leverage observer for dynamically registering colleagues and communicating with them.
 
-	Mediator is similar to Facade in that it abstracts functionality of existing classes. Mediator abstracts/centralizes arbitrary communication between colleague objects, it routinely "adds value", and it is known/referenced by the colleague objects (i.e. it defines a multidirectional protocol). In contrast, Facade defines a simpler interface to a subsystem, it doesn't add new functionality, and it is not known by the subsystem classes (i.e. it defines a unidirectional protocol where it makes requests of the subsystem classes but not vice versa).
+	Mediator is similar to facade in that it abstracts functionality of existing classes. Mediator abstracts/centralizes arbitrary communication between colleague objects, it routinely "Adds value", and it is known/referenced by the colleague objects (I.E. It defines a multidirectional protocol). In contrast, facade defines a simpler interface to a subsystem, it doesn't add new functionality, and it is not known by the subsystem classes (I.E. It defines a unidirectional protocol where it makes requests of the subsystem classes but not vice versa).
 
-	Memento is often used in conjunction with Iterator. An Iterator can use a Memento to capture the state of an iteration. The Iterator stores the Memento internally.
+	Memento is often used in conjunction with iterator. An iterator can use a memento to capture the state of an iteration. The iterator stores the memento internally.
 
-	State is like Strategy except in its intent.
+	State is like strategy except in its intent.
 
-	Flyweight explains when and how State objects can be shared.
+	Flyweight explains when and how state objects can be shared.
 
-	State objects are often Singletons.
+	State objects are often singletons.
 
 	Strategy lets you change the guts of an object. Decorator lets you change the skin.
 
-	Strategy is to algorithm. as Builder is to creation.
+	Strategy is to algorithm. As builder is to creation.
 
-	Strategy has 2 different implementations, the first is similar to State. The difference is in binding times (Strategy is a bind-once pattern, whereas State is more dynamic).
+	Strategy has 2 different implementations, the first is similar to state. The difference is in binding times (strategy is a bind-once pattern, whereas state is more dynamic).
 
-	Strategy objects often make good Flyweights.
+	Strategy objects often make good flyweights.
 
-	Strategy is like Template method except in its granularity.
+	Strategy is like template method except in its granularity.
 
 	Template method uses inheritance to vary part of an algorithm. Strategy uses delegation to vary the entire algorithm.
 
-	The Visitor pattern is like a more powerful Command pattern because the visitor may initiate whatever is appropriate for the kind of object it encounters.
+	The visitor pattern is like a more powerful command pattern because the visitor may initiate whatever is appropriate for the kind of object it encounters.
 
 ———————————————————————————————————————————————————————————————————————————————————————
 
@@ -586,129 +586,133 @@ BEHAVIORAL DP
 
 ———————————————————————————————————————————————————————————————————————————————————————
 
-SOFTWARE DESIGN AND ARCHITECTURE COURSES
+Software design and architecture courses
 ————————————————————————————————————————
 
 
-BASICS OF SOFTWARE ARCHITECTURE & DESIGN PATTERNS IN JAVA - UDEMY
+Basics of software architecture & design patterns in Java - udemy
 
-EXPERIENCE DESIGN PATTERNS IN JAVA - UDEMY
+Experience design patterns in Java - udemy
 
-JAVA DESIGN PATTERNS AND ARCHITECTURE - UDEMY/ JOHN PURCELL
+Java design patterns and architecture - udemy/ john purcell
 
-FROM 0 TO 1: DESIGN PATTERNS - 24 THAT MATTER IN JAVA - UDEMY/ LOONY CRON
+From 0 to 1: design patterns - 24 that matter in Java - udemy/ loony cron
 
-BYTE SIZE CHUNKS : JAVA MODEL-VIEW-CONTROLLER (MVC) - UDEMY/ LOONY CRON
+Byte size chunks : Java model-view-controller (mvc) - udemy/ loony cron
 
-SOFTWARE ARCHITECTURE & DESIGN - UDACITY
+Software architecture & design - udacity
 
-SOFTWARE DEVELOPMENT PROCESS - UDACITY
+Software development process - udacity
 
-SOFTWARE ENGINEERING FOR THE WEB APPLICATIONS - MIT OPEN COURSEARE 
+Software engineering for the web applications - mit open courseare 
 
-JAVA PROGRAMMING: BUILD A RECOMMENDATION SYSTEM - COURSERA 
+Java programming: build a recommendation system - coursera 
 
-OBJECT ORIENTED TUTS - DEREK BANAS/ YOUTUBE 
+Object oriented tuts - derek banas/ Youtube 
 
-DESIGN PATTERNS - DEREK BANAS/ YOUTUBE 
+Design patterns - derek banas/ Youtube 
 
-DZONE DESIGN PATTERNS <HTTPS://DZONE.COM/REFCARDZ/DESIGN-PATTERNS>
+Dzone design patterns <https://dzone.Com/refcardz/design-patterns>
 
-OOP DESIGN PATTERNS <HTTPS://SOURCEMAKING.COM/>
+Oop design patterns <https://sourcemaking.Com/>
 
-DZONE DOMAIN-DRIVEN DESIGN (DDD) <HTTPS://DZONE.COM/REFCARDZ/GETTING-STARTED-DOMAIN-DRIVEN>
+Dzone domain-driven design (ddd) <https://dzone.Com/refcardz/getting-started-domain-driven>
 
-BEHAVIOR DRIVEN DESIGN (BDD)
-
-
-———————————————————————————————————————————————————————————
-GROKKING THE SYSTEM DESIGN INTERVIEW  -   EDUCATIVE.IO 
-———————————————————————————————————————————————————————————
+Behavior driven design (bdd)
 
 
 ———————————————————————————————————————————————————————————
-FOUR DISTRIBUTED SYSTEMS ARCHITECTURAL PATTERNS - TIM BERGLUND/ YOUTUBE 
+Grokking the system design interview  -  Educative.Io 
+———————————————————————————————————————————————————————————
 
-DISTRIBUTED SYSTEMS IN ONE LESSON - TIM BERGLUND/ YOUTUBE 
 
-HOW UBER SCALED ITS REAL TIME INFRASTRUCTURE TO TRILLION EVENTS PER DAY - YOUTUBE 
+———————————————————————————————————————————————————————————
+Four distributed systems architectural patterns - tim berglund/ Youtube 
 
-REAL-TIME DELIVERY ARCHITECTURE AT TWITTER - YOUTUBE 
+Distributed systems in one lesson - tim berglund/ Youtube 
 
-KEYNOTE: TWITTER'S SEARCH ARCHITECTURE - YOUTUBE 
+How uber scaled its real time infrastructure to trillion events per day - Youtube 
 
-SCALING INSTAGRAM INFRASTRUCTURE - YOUTUBE
+Real-time delivery architecture at twitter - Youtube 
 
-DESIGN A PARKING LOT - SUCCESS IN TECH/ YOUTUBE 
+Keynote: twitter's search architecture - Youtube 
 
-MESSENGER SERVICE LIKE WHATSAPP OR WECHAT - SUCCESS IN TECH/ YOUTUBE 
+Scaling instagram infrastructure - Youtube
 
-SYSTEM DESIGN: HOW TO DESIGN TWITTER - SUCCESS IN TECH/ YOUTUBE 
+Design a parking lot - success in tech/ Youtube 
 
-SYSTEM DESIGN: UBER LYFT RIDE SHARING SERVICES - SUCCESS IN TECH/ YOUTUBE  
+Messenger service like whatsapp or wechat - success in tech/ Youtube 
+
+System design: how to design twitter - success in tech/ Youtube 
+
+System design: uber lyft ride sharing services - success in tech/ Youtube  
 ———————————————————————————————————————————————————————————
 
 
 
 
-SOFTWARE DESIGN AND ARCHITECTURE SPECIALIZATION  - COURSERA 
+Software design and architecture specialization  - coursera 
 ———————————————————————————————————————————————————————————
 
-OBJECT-ORIENTED DESIGN - UNIVERSITY OF ALBERTA / COURSERA 
+Object-oriented design - University of alberta / coursera 
 
-DESIGN PATTERNS - UNIVERSITY OF ALBERTA / COURSERA 
+Design patterns - University of alberta / coursera 
 
-SOFTWARE ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
+Software architecture  - University of alberta / coursera 
 
-SERVICE-ORIENTED ARCHITECTURE  - UNIVERSITY OF ALBERTA / COURSERA 
-
-
+Service-oriented architecture  - University of alberta / coursera 
 
 
 
-OBJECT ORIENTED PROGRAMMING IN JAVA SPECIALIZATION
+
+
+Object oriented programming in Java specialization
 ——————————————————————————————————————————————————
-JAVA PROGRAMMING: SOLVING PROBLEMS WITH SOFTWARE - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+Java programming: solving problems with software - University of california, san diego, duke University
 
-JAVA PROGRAMMING: ARRAYS, LISTS, AND STRUCTURED DATA - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+Java programming: arrays, lists, and structured data - University of california, san diego, duke University
 
-OBJECT ORIENTED PROGRAMMING IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
+Object oriented programming in Java - University of california, san diego, duke University
 
-DATA STRUCTURES AND PERFORMANCE - UNIVERSITY OF CALIFORNIA, SAN DIEGO, DUKE UNIVERSITY
-
-
+Data structures and performance - University of california, san diego, duke University
 
 
 
-OBJECT ORIENTED JAVA PROGRAMMING: DATA STRUCTURES AND BEYOND SPECIALIZATION
+
+
+Object oriented Java programming: data structures and beyond specialization
 ———————————————————————————————————————————————————————————————————————————
 
-OBJECT ORIENTED PROGRAMMING IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+Object oriented programming in Java - University of california, san diego
 
-DATA STRUCTURES AND PERFORMANCE - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+Data structures and performance - University of california, san diego
 
-ADVANCED DATA STRUCTURES IN JAVA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+Advanced data structures in Java - University of california, san diego
 
-MASTERING THE SOFTWARE ENGINEERING INTERVIEW - UNIVERSITY OF CALIFORNIA, SAN DIEGO
+Mastering the software engineering interview - University of california, san diego
 
-CAPSTONE: ANALYZING (SOCIAL) NETWORK DATA - UNIVERSITY OF CALIFORNIA, SAN DIEGO
-
-
+Capstone: analyzing (social) network data - University of california, san diego
 
 
 
-BOOKS
+
+
+Books
 —————
 
-PATTERNS FOR PARALLEL PROGRAMMING - TIMOTHY G. MATTSON
+	Patterns for parallel programming - timothy g. Mattson
 
-HEAD FIRST DESIGN PATTERNS
+	Head first design patterns
 
-HEAD FIRST OBJECT-ORIENTED DESIGN AND ANALYSIS
+	Head first object-oriented design and analysis
 
-DESIGN PATTERNS: ELEMENTS OF REUSABLE OBJECT-ORIENTED SOFTWARE 
+	Design patterns: elements of reusable object-oriented software 
 
-J2EE DESIGN PATTERNS - William Crawford
+	J2ee design patterns - william crawford
+
+	Elegant objects I - yegor bugayenko
+
+	Elegant objects ii - yegor bugayenko
 
 
 
@@ -780,7 +784,7 @@ Flyweight.
 
 Fluent interfaces are sometimes confused with the Builder pattern, because they share method chaining and a fluent usage. However, fluent interfaces are not primarily used to create shared (mutable) objects, but to configure complex objects without having to respecify the target object on every property change. 
 
-### Q8: What is the difference between java.io.Serialization and Memento pattern? {#Q8}
+### Q8: What is the difference between Java.io.Serialization and Memento pattern? {#Q8}
 
 Memento is typically used to implement rollback/save-point support. Example we might want to mark the state of an object at a point in time, do some work and then decide to rollback to the previous state. 
 
@@ -823,30 +827,30 @@ THE UNIVERSAL DESIGN PATTERN - STEVE  YEGGE
     - [x] https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023
     - [x] 8 Things You Need to Know Before a System Design Interview: http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/
     - [x] Algorithm design: http://www.hiredintech.com/algorithm-design/
-    - [x] Database Normalization - 1NF, 2NF, 3NF and 4NF: https://www.youtube.com/watch?v=UrYLYV7WSHM
+    - [x] Database Normalization - 1NF, 2NF, 3NF and 4NF: https://www.Youtube.com/watch?v=UrYLYV7WSHM
     - [x] https://github.com/checkcheckzz/system-design-interview - There are a lot of resources in this one. Look through the articles and examples. I put some of them below.
     - [x] How to ace a systems design interview: http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/
     - [x] Numbers Everyone Should Know: http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/
     - [x] How long does it take to make a context switch?: http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html
-    - [x] Transactions Across Datacenters: https://www.youtube.com/watch?v=srOgpXECblk
+    - [x] Transactions Across Datacenters: https://www.Youtube.com/watch?v=srOgpXECblk
     - [x] A plain english introduction to CAP Theorem: http://ksat.me/a-plain-english-introduction-to-cap-theorem/
     - [x] Paxos Consensus algorithm: 
-        - short video: https://www.youtube.com/watch?v=s8JqcZtvnsM
-        - extended video with use case and multi-paxos: https://www.youtube.com/watch?v=JEpsBg0AO6o
+        - short video: https://www.Youtube.com/watch?v=s8JqcZtvnsM
+        - extended video with use case and multi-paxos: https://www.Youtube.com/watch?v=JEpsBg0AO6o
         - paper: http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf
     - [x] Consistent Hashing: http://www.tom-e-white.com/2007/11/consistent-hashing.html
     - [x] NoSQL Patterns: http://horicky.blogspot.com/2009/11/nosql-patterns.html
-    - [x] Optional: UML 2.0 Series: https://www.youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc
+    - [x] Optional: UML 2.0 Series: https://www.Youtube.com/watch?v=OkC7HKtiZC0&list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc
     - [x] OOSE: Software Dev Using UML and Java (21 videos): 
         - Can skip this if you have a great grasp of OO and OO design practices.
-        - https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO
+        - https://www.Youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO
     - [x] SOLID OOP Principles:
-        - [x] Bob Martin SOLID Principles of Object Oriented and Agile Design: https://www.youtube.com/watch?v=TMuno5RZNeE
-        - [x] SOLID Design Patterns in C#: https://www.youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ
-        - [x] SOLID Principles: https://www.youtube.com/playlist?list=PL4CE9F710017EA77A
+        - [x] Bob Martin SOLID Principles of Object Oriented and Agile Design: https://www.Youtube.com/watch?v=TMuno5RZNeE
+        - [x] SOLID Design Patterns in C#: https://www.Youtube.com/playlist?list=PL8m4NUhTQU48oiGCSgCP1FiJEcg_xJzyQ
+        - [x] SOLID Principles: https://www.Youtube.com/playlist?list=PL4CE9F710017EA77A
         - [x] S - Single Responsibility Principle | Single responsibility to each Object
             - http://www.oodesign.com/single-responsibility-principle.html
-            - http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html
+            - http://www.Javacodegeeks.com/2011/11/solid-single-responsibility-principle.html
             - more flavor: https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk
         - [x] O - Open/Closed Principal  | On production level Objects are ready for extension for not for modification
             - http://www.oodesign.com/open-close-principle.html
@@ -858,14 +862,14 @@ THE UNIVERSAL DESIGN PATTERN - STEVE  YEGGE
             - more flavor: http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&hl=en
         - [x] I - Interface segregation principle | clients should not be forced to implement interfaces they don't use
             - http://www.oodesign.com/interface-segregation-principle.html
-            - Interface Segregation Principle in 5 minutes: https://www.youtube.com/watch?v=3CtAfl7aXAQ
+            - Interface Segregation Principle in 5 minutes: https://www.Youtube.com/watch?v=3CtAfl7aXAQ
             - more flavor: http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&hl=en
         - [x] D - Dependency Inversion principle | Reduce the dependency In composition of objects.
             - http://www.oodesign.com/dependency-inversion-principle.html
             - http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important
             - more flavor: http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&hl=en
     - [x] Scalability:
-        - [x] Great overview: https://www.youtube.com/watch?v=-W9F__D3oY4
+        - [x] Great overview: https://www.Youtube.com/watch?v=-W9F__D3oY4
         - [x] Short series: 
             - http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones
             - http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database
@@ -875,20 +879,20 @@ THE UNIVERSAL DESIGN PATTERN - STEVE  YEGGE
         - [x] Fallacies of Distributed Computing Explained: https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf
         - [x] Pragmatic Programming Techniques: http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html
             - extra: Google Pregel Graph Processing: http://horicky.blogspot.com/2010/07/google-pregel-graph-processing.html
-        - [x] Jeff Dean - Building Software Systems At Google and Lessons Learned: https://www.youtube.com/watch?v=modXC5IWTJI
+        - [x] Jeff Dean - Building Software Systems At Google and Lessons Learned: https://www.Youtube.com/watch?v=modXC5IWTJI
         - [x] Introduction to Architecting Systems for Scale: http://lethain.com/introduction-to-architecting-systems-for-scale/
-        - [x] Scaling mobile games to a global audience using App Engine and Cloud Datastore: https://www.youtube.com/watch?v=9nWyWwY2Onc
-        - [x] How Google Does Planet-Scale Engineering for Planet-Scale Infra: https://www.youtube.com/watch?v=H4vMcD7zKM0
+        - [x] Scaling mobile games to a global audience using App Engine and Cloud Datastore: https://www.Youtube.com/watch?v=9nWyWwY2Onc
+        - [x] How Google Does Planet-Scale Engineering for Planet-Scale Infra: https://www.Youtube.com/watch?v=H4vMcD7zKM0
         - [x] The Importance of Algorithms: https://www.topcoder.com/community/data-science/data-science-tutorials/the-importance-of-algorithms/
         - [x] Sharding: http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html
         - [x] Scale at Facebook (2009): https://www.infoq.com/presentations/Scale-at-Facebook
-        - [x] Scale at Facebook (2012), "Building for a Billion Users": https://www.youtube.com/watch?v=oodS71YtkGU
-        - [x] Engineering for the Long Game - Astrid Atkinson Keynote: https://www.youtube.com/watch?v=p0jGmgIrf_M&list=PLRXxvay_m8gqVlExPC5DG3TGWJTaBgqSA&index=4
-        - [x] 7 Years Of YouTube Scalability Lessons In 30 Minutes: http://highscalability.com/blog/2012/3/26/7-years-of-youtube-scalability-lessons-in-30-minutes.html
-            - video: https://www.youtube.com/watch?v=G-lGCC4KKok
+        - [x] Scale at Facebook (2012), "Building for a Billion Users": https://www.Youtube.com/watch?v=oodS71YtkGU
+        - [x] Engineering for the Long Game - Astrid Atkinson Keynote: https://www.Youtube.com/watch?v=p0jGmgIrf_M&list=PLRXxvay_m8gqVlExPC5DG3TGWJTaBgqSA&index=4
+        - [x] 7 Years Of Youtube Scalability Lessons In 30 Minutes: http://highscalability.com/blog/2012/3/26/7-years-of-Youtube-scalability-lessons-in-30-minutes.html
+            - video: https://www.Youtube.com/watch?v=G-lGCC4KKok
         - [x] How PayPal Scaled To Billions Of Transactions Daily Using Just 8VMs: http://highscalability.com/blog/2016/8/15/how-paypal-scaled-to-billions-of-transactions-daily-using-ju.html
         - [x] How to Remove Duplicates in Large Datasets: https://blog.clevertap.com/how-to-remove-duplicates-in-large-datasets/
-        - [x] A look inside Etsy's scale and engineering culture with Jon Cowie: https://www.youtube.com/watch?v=3vV4YiqKm1o
+        - [x] A look inside Etsy's scale and engineering culture with Jon Cowie: https://www.Youtube.com/watch?v=3vV4YiqKm1o
         - [x] What Led Amazon to its Own Microservices Architecture: http://thenewstack.io/led-amazon-microservices-architecture/
         - [x] To Compress Or Not To Compress, That Was Uber's Question: https://eng.uber.com/trip-data-squeeze/
         - [x] Asyncio Tarantool Queue, Get In The Queue: http://highscalability.com/blog/2016/3/3/asyncio-tarantool-queue-get-in-the-queue.html
@@ -918,12 +922,12 @@ THE UNIVERSAL DESIGN PATTERN - STEVE  YEGGE
         - [x] ESPN's Architecture At Scale - Operating At 100,000 Duh Nuh Nuhs Per Second: http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html
         - [x] See "Messaging, Serialization, and Queueing Systems" way below for info on some of the technologies that can glue services together
         - [x] Twitter:
-            - O'Reilly MySQL CE 2011: Jeremy Cole, "Big and Small Data at @Twitter": https://www.youtube.com/watch?v=5cKTP36HVgI
+            - O'Reilly MySQL CE 2011: Jeremy Cole, "Big and Small Data at @Twitter": https://www.Youtube.com/watch?v=5cKTP36HVgI
             - Timelines at Scale: https://www.infoq.com/presentations/Twitter-Timeline-Scalability
         - For even more, see "Mining Massive Datasets" video series in the Video Series section.
     - [x] Practicing the system design process: Here are some ideas to try working through on paper, each with some documentation on how it was handled in the real world:
         - review: System Design from HiredInTech: http://www.hiredintech.com/system-design/
-        - cheat sheet: https://github.com/jwasham/google-interview-university/blob/master/extras/cheat%20sheets/system-design.pdf
+        - cheat sheet: https://github.com/jwasham/google-interview-University/blob/master/extras/cheat%20sheets/system-design.pdf
         - flow:
             1. Understand the problem and scope:
                 - define the use cases, with interviewer's help
