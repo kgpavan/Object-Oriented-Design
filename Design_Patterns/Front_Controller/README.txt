@@ -1,16 +1,6 @@
----
-layout: pattern
-title: Front Controller
-folder: front-controller
-permalink: /patterns/front-controller/
-pumlid: PSlB3OGm303HLfO24j-t6nCC13bEvC_IFk6yjz6JPgbIE3OAvS_fFkmBe7Zde_ePQnXfwU8adajlK3bkT5Iuy8Tf8wk7f87kf6BGq6R0hlD8xwQTUG9v-SCSslA8nWy0
-categories: Presentation Tier
-tags:
- - Java
- - Difficulty-Intermediate
----
 
 ## Intent
+——————————————————————
 Introduce a common handler for all requests for a web site. This
 way we can encapsulate common functionality such as security,
 internationalization, routing and logging in a single place.

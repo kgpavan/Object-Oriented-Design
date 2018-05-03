@@ -1,21 +1,19 @@
 
+BUSINESS DELEGATE DESIGN PATTERN 
+————————————————————————————————
 
 ## Intent
+—————————
 
-The Business Delegate pattern adds an abstraction layer between
-presentation and business tiers. By using the pattern we gain loose coupling
-between the tiers and encapsulate knowledge about how to locate, connect to,
-and interact with the business objects that make up the application.
-
+The Business Delegate pattern adds an abstraction layer between presentation and business tiers. By using the pattern we gain loose coupling between the tiers and encapsulate knowledge about how to locate, connect to, and interact with the business objects that make up the application.
 
 
 ## Applicability
-Use the Business Delegate pattern when
+————————————————
 
-* you want loose coupling between presentation and business tiers
-* you want to orchestrate calls to multiple business services
-* you want to encapsulate service lookups and service calls
+Use the Business Delegate pattern when, 
 
-## Credits
+i.   You want loose coupling between presentation and business tiers
+ii.  You want to orchestrate calls to multiple business services
+iii. You want to encapsulate service lookups and service calls
 
-* [J2EE Design Patterns](http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2)

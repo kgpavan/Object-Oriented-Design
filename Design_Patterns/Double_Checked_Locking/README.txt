@@ -1,6 +1,6 @@
 
 ## Intent
----------
+——————————————————————
 
 Reduce the overhead of acquiring a lock by first testing the locking criterion (the "lock hint") without actually acquiring the lock. Only if the locking criterion check indicates that locking is required does the actual locking logic proceed.
 

@@ -5,8 +5,7 @@ ADAPTER DESIGN PATTERN
 ## Intent
 —————————
 
-Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
-Wrap an existing class with a new interface. Impedance match an old component to a new system. 
+Adapter design pattern convert the interface of a class into another interface clients expect and lets classes work together that couldn't otherwise because of incompatible interfaces. It wraps an existing class with a new interface and provide impedance match an old component to a new system. 
 
 ## Problem
 ——————————
@@ -81,6 +80,20 @@ The adapter/wrapper class "has a" instance of the adaptee class.
 The adapter/wrapper class "maps" the client interface to the adaptee interface.
 
 The client uses (is coupled to) the new interface
+
+
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Target   (ChemicalCompound)
+defines the domain-specific interface that Client uses.
+Adapter   (Compound)
+adapts the interface Adaptee to the Target interface.
+Adaptee   (ChemicalDatabank)
+defines an existing interface that needs adapting.
+Client   (AdapterApp)
+collaborates with objects conforming to the Target interface.
 
 
 

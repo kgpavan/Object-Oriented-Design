@@ -1,16 +1,6 @@
----
-layout: pattern
-title: EIP Aggregator
-folder: eip-aggregator
-permalink: /patterns/eip-aggregator/
-categories: Enterprise integration
-tags:
- - Java
- - Difficulty-Intermittent
- - Enterprise integration
----
 
 ## Intent
+——————————————————————
 Sometimes in enterprise systems there is a need to group incoming data in order to process it as a whole. For example
 you may need to gather offers and after defined number of offers has been received you would like to choose the one with
 the best parameters. 

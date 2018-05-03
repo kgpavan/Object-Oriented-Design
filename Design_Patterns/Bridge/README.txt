@@ -41,6 +41,21 @@ Decompose the component's interface and implementation into orthogonal class hie
 The interface object is the "handle" known and used by the client; while the implementation object, or "body", is safely encapsulated to ensure that it may continue to evolve, or be entirely replaced (or shared at run-time.
 
 
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Abstraction   (BusinessObject)
+defines the abstraction's interface.
+maintains a reference to an object of type Implementor.
+RefinedAbstraction   (CustomersBusinessObject)
+extends the interface defined by Abstraction.
+Implementor   (DataObject)
+defines the interface for implementation classes. This interface doesn't have to correspond exactly to Abstraction's interface; in fact the two interfaces can be quite different. Typically the Implementation interface provides only primitive operations, and Abstraction defines higher-level operations based on these primitives.
+ConcreteImplementor   (CustomersDataObject)
+implements the Implementor interface and defines its concrete implementation.
+
+
 
 ## Use of Bridge Pattern
 ————————————————————————

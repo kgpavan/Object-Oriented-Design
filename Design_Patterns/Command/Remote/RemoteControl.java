@@ -5,6 +5,7 @@ package design.design_patterns.command.remote;
 //
 public class RemoteControl {
 
+
     Command[] onCommands;
     Command[] offCommands;
 

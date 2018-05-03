@@ -1,8 +1,6 @@
 
 /**
- *
  * Enum class containing the four caching strategies implemented in the pattern.
- *
  */
 public enum CachingPolicy {
 

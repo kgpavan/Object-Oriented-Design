@@ -1,5 +1,7 @@
 package design.design_patterns.command.simpleremote;
 
+
+
 public class RemoteControlTest {
 
     public static void main(String[] args) {

@@ -1,17 +1,6 @@
----
-layout: pattern
-title: Fluent Interface
-folder: fluentinterface
-permalink: /patterns/fluentinterface/
-pumlid: NOj93eCm302_KXv0VEzlN6F0bMCYB_3zvjpRQ3IpY97MnkNwEZD7l04SdtP8dlMfOAVBaYqRNHr4wy54Xo_Uk6uSSjWwC9FT0Zh61DYrPY_pyXs9WPF-NIllRLJN7m00
-categories: Other
-tags: 
- - Java
- - Difficulty-Intermediate
- - Functional
----
 
 ## Intent
+——————————————————————
 A fluent interface provides an easy-readable, flowing interface, that often mimics a domain specific language. Using this pattern results in code that can be read nearly as human language.
 
 ## Implementation

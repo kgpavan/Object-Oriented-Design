@@ -1,8 +1,6 @@
 
 /**
- * 
  * OrcSoldier
- *
  */
 public class OrcSoldier extends RequestHandler {
 

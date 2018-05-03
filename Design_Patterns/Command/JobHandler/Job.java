@@ -1,4 +1,4 @@
-package design.design_patterns.command.JobHandler;
+
 
 public interface Job {
 

@@ -38,6 +38,26 @@ The Abstract Factory pattern is useful when a client object wants to create an i
 The abstract factory is useful for plugging in a different group of objects to alter the behavior of the system. For each group or family, a concrete factory is implemented that manages the creation of the objects and the inter-dependencies and consistency requirements between them. Each concrete factory implements the interface of the abstract factory.
 
 
+
+Participants
+
+    The classes and objects participating in this pattern are:
+
+AbstractFactory  (ContinentFactory)
+declares an interface for operations that create abstract products
+ConcreteFactory   (AfricaFactory, AmericaFactory)
+implements the operations to create concrete product objects
+AbstractProduct   (Herbivore, Carnivore)
+declares an interface for a type of product object
+Product  (Wildebeest, Lion, Bison, Wolf)
+defines a product object to be created by the corresponding concrete factory
+implements the AbstractProduct interface
+Client  (AnimalWorld)
+uses interfaces declared by AbstractFactory and AbstractProduct classes
+
+
+
+
 ——————————————————————————————————————————————————————————————————————————————————————
 ## AbstractFactory: Declares an interface for operations that create abstract product objects.
 

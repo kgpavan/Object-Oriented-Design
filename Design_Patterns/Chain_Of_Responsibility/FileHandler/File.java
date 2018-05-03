@@ -1,6 +1,7 @@
-package design.design_patterns.chainOfResponsibility.FileHandler;
+
 
 public class File {
+
 
 	private final String fileName;
 	private final String fileType;

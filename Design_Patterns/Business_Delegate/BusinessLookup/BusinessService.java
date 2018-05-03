@@ -1,8 +1,6 @@
 
 /**
- * 
  * Interface for service implementations
- *
  */
 public interface BusinessService {
 

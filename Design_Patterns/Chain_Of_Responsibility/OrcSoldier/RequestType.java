@@ -1,8 +1,6 @@
 
 /**
- * 
  * RequestType enumeration
- *
  */
 public enum RequestType {
 

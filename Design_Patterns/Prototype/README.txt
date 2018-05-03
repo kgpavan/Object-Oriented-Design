@@ -103,3 +103,16 @@ Prototype is unique among the other creational patterns in that it doesn't requi
 
 
 
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Prototype  (ColorPrototype)
+declares an interface for cloning itself
+ConcretePrototype  (Color)
+implements an operation for cloning itself
+Client  (ColorManager)
+creates a new object by asking a prototype to clone itself
+
+
+

@@ -2,13 +2,13 @@ package design.design_patterns.command.JobHandler;
 
 
 public class TestCommandPattern {
-	public static void main(String[] args)
-    {
+	
+    public static void main(String[] args){
         init();
     }
  
-    private static void init()
-    {
+    private static void init(){
+
         ThreadPool pool = new ThreadPool(10);
         
         Email email = null;
@@ -44,5 +44,4 @@ public class TestCommandPattern {
         
         pool.shutdownPool();
     }
-
 }

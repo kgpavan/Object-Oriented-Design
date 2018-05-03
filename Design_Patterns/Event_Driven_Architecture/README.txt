@@ -1,17 +1,6 @@
----
-layout: pattern
-title: Event Driven Architecture
-folder: event-driven-architecture
-permalink: /patterns/event-driven-architecture/
-pumlid: TOhH3SCW30LNQGS0_tSRnrZ15H1adfFromBzkfFktZQaHT7mzgh0N1yYvoUVXXf7B7Mv1dGWozN9MZmCTlhopQdeidEaoO3wMDHvRI6zzvwAssPYbsfGGRYIGlxN7DxpZDv-
-categories: Architectural
-tags:
- - Java
- - Difficulty-Intermediate
- - Reactive
----
 
 ## Intent
+——————————————————————
 Send and notify state changes of your objects to other applications using an Event-driven Architecture.
 
 ![alt text](./etc/eda.png "Event Driven Architecture")

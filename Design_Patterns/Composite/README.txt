@@ -1,4 +1,4 @@
-
+——————————————————————
 
 There are times when you feel a need of a tree data structure in your code. There are many variations to the tree data structure, but sometimes there is a need of a tree in which both branches as well as leafs of the tree should be treated as uniformly.
 
@@ -151,3 +151,27 @@ Use the Composite pattern when
 * [Apache Wicket] Component(https://github.com/apache/wicket) component tree, 
 * [Apache Wicket] MarkupContainer(https://github.com/apache/wicket) MarkupContainer 
 
+
+
+
+
+
+
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Component   (DrawingElement)
+declares the interface for objects in the composition.
+implements default behavior for the interface common to all classes, as appropriate.
+declares an interface for accessing and managing its child components.
+(optional) defines an interface for accessing a component's parent in the recursive structure, and implements it if that's appropriate.
+Leaf   (PrimitiveElement)
+represents leaf objects in the composition. A leaf has no children.
+defines behavior for primitive objects in the composition.
+Composite   (CompositeElement)
+defines behavior for components having children.
+stores child components.
+implements child-related operations in the Component interface.
+Client  (CompositeApp)
+manipulates objects in the composition through the Component interface.

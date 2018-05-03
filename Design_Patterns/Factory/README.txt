@@ -1,7 +1,7 @@
 
 
 FACTORY DESIGN PATTERN
-----------------------
+——————————————————————
 
 The Factory Method Pattern gives us a way to encapsulate the instantiations of concrete types. The Factory Method pattern encapsulates the functionality required to select and instantiate an appropriate class, inside a designated method referred to as a factory method. The Factory Method selects an appropriate class from a class hierarchy based on the application context and other influencing factors. It then instantiates the selected class and returns it as an instance of the parent class type.
 
@@ -94,4 +94,23 @@ Use the Factory Method pattern when
 ## Credits
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+
+
+
+
+
+
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Product  (Page)
+defines the interface of objects the factory method creates
+ConcreteProduct  (SkillsPage, EducationPage, ExperiencePage)
+implements the Product interface
+Creator  (Document)
+declares the factory method, which returns an object of type Product. Creator may also define a default implementation of the factory method that returns a default ConcreteProduct object.
+may call the factory method to create a Product object.
+ConcreteCreator  (Report, Resume)
+overrides the factory method to return an instance of a ConcreteProduct.
 

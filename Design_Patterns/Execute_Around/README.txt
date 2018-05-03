@@ -1,17 +1,6 @@
----
-layout: pattern
-title: Execute Around
-folder: execute-around
-permalink: /patterns/execute-around/
-pumlid: NSZ14G8n20NGLhI0XBlT865suoGa0n_NylNixSsxTvEHJTF7xGHsF8YShtfqdFdCK9TbK4ELDQcFl1ZizE8tbwRH3okR0NKBcXm_a7vK4bhOLreZXVnLJPzrvnnV
-categories: Other
-tags:
- - Java
- - Difficulty-Beginner
- - Idiom
----
 
 ## Intent
+——————————————————————
 Execute Around idiom frees the user from certain actions that
 should always be executed before and after the business method. A good example
 of this is resource allocation and deallocation leaving the user to specify

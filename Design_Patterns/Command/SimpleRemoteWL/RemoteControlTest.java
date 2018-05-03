@@ -1,7 +1,8 @@
 package design.design_patterns.command.simpleremoteWL;
 
-public class RemoteControlTest {
 
+
+public class RemoteControlTest {
 
     public static void main(String[] args) {
 

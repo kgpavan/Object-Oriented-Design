@@ -1,16 +1,6 @@
----
-layout: pattern
-title: Half-Sync/Half-Async
-folder: half-sync-half-async
-permalink: /patterns/half-sync-half-async/
-pumlid: RScv3SCm3030LU819FRPXg5fIm552tnYPFiyjRi3RkbAaYkdoQr5JBy369vrxz7oaSv6XmPhL3e6TCaJ0msU-CAoilTToyG8DdKOw5z0GzcAlvNAN_WZSD1brBHHPmxv0000
-categories: Concurrency
-tags:
- - Java
- - Difficulty-Intermediate
----
 
 ## Intent
+——————————————————————
 The Half-Sync/Half-Async pattern decouples synchronous I/O from
 asynchronous I/O in a system to simplify concurrent programming effort without
 degrading execution efficiency.

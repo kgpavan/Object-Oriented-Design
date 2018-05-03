@@ -1,4 +1,4 @@
-
+——————————————————————
 ## Intent
 
 Allows send of messages/events between components of an application

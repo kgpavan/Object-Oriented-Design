@@ -1,8 +1,6 @@
 
 /**
- * 
  * OrcKing makes requests that are handled by the chain.
- * 
  */
 public class OrcKing {
 

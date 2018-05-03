@@ -1,6 +1,7 @@
 
 
 ## Intent
+——————————————————————
 Provide a unified interface to a set of interfaces in a subsystem.
 Facade defines a higher-level interface that makes the subsystem easier to use.
 
@@ -197,3 +198,19 @@ Use the Facade pattern when
 ## Credits
 
 * [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+
+
+
+
+
+Participants
+
+    The classes and objects participating in this pattern are:
+
+Facade   (MortgageApplication)
+knows which subsystem classes are responsible for a request.
+delegates client requests to appropriate subsystem objects.
+Subsystem classes   (Bank, Credit, Loan)
+implement subsystem functionality.
+handle work assigned by the Facade object.
+have no knowledge of the facade and keep no reference to it.

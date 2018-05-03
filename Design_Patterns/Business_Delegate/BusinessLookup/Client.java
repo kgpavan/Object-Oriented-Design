@@ -1,8 +1,6 @@
 
 /**
- * 
  * Client utilizes BusinessDelegate to call the business tier
- *
  */
 public class Client {
 

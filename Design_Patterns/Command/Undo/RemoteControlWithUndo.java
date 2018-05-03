@@ -1,8 +1,10 @@
 package design.design_patterns.command.undo;
 
-//
-// This is the invoker
-//
+
+
+/*
+* This is the invoker
+*/ 
 public class RemoteControlWithUndo {
 
     Command[] onCommands;

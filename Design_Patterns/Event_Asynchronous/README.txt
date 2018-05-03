@@ -1,16 +1,6 @@
----
-layout: pattern
-title: Event-based Asynchronous
-folder: event-asynchronous
-permalink: /patterns/event-asynchronous/
-categories: Concurrency
-tags:
- - difficulty-intermediate
- - performance
- - Java
----
 
 ## Intent
+——————————————————————
 The Event-based Asynchronous Pattern makes available the advantages of multithreaded applications while hiding many
 of the complex issues inherent in multithreaded design. Using a class that supports this pattern can allow you to:
 

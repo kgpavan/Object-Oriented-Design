@@ -1,15 +1,6 @@
----
-layout: pattern
-title: Extension objects
-folder: extension-objects
-permalink: /patterns/extension-objects/
-categories: Behavioral
-tags:
- - Java
- - Difficulty-Intermediate
----
 
 ## Intent
+——————————————————————
 Anticipate that an object’s interface needs to be extended in the future. Additional
 interfaces are defined by extension objects.
 

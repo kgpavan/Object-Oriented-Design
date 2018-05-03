@@ -1,13 +1,14 @@
 
 ## Intent
+—————————
+
 To avoid expensive re-acquisition of resources by not releasing the resources immediately after their use. The resources retain their identity, are kept in some fast-access storage, and are re-used to avoid having to acquire them again.
 
 
-
 ## Applicability
-Use the Caching pattern(s) when
+————————————————
 
-* Repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead.
+Use the Caching pattern(s) when repetitious acquisition, initialization, and release of the same resource causes unnecessary performance overhead.
 
 
 ## Credits

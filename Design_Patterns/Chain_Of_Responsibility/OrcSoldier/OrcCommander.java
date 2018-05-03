@@ -1,8 +1,6 @@
 
 /**
- * 
  * OrcCommander
- *
  */
 public class OrcCommander extends RequestHandler {
 

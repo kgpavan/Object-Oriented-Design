@@ -1,6 +1,7 @@
-package design.design_patterns.chainOfResponsibility.FileHandler;
+
 
 public class DocFileHandler implements Handler {
+
 
     private Handler handler;
     private String handlerName;

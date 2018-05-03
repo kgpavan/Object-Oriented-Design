@@ -1,9 +1,8 @@
 package com.car;
 
 /*
-   The product is utilized in the car, hence, 
-   the car is an abstract class and the product 
-   is an interface. 
+   The product is utilized in the car, hence, the car is 
+   an abstract class and the product is an interface. 
 */
 public abstract class Car {
 

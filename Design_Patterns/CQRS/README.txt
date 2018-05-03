@@ -1,4 +1,4 @@
-
+——————————————————————
 
 /**
  * CQRS : Command Query Responsibility Segregation. A pattern used to separate query services from commands or writes

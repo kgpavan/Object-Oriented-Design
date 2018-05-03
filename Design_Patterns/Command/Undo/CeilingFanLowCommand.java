@@ -1,7 +1,10 @@
 package design.design_patterns.command.undo;
 
+
 public class CeilingFanLowCommand implements Command {
+
 	CeilingFan ceilingFan;
+
 	int prevSpeed;
   
 	public CeilingFanLowCommand(CeilingFan ceilingFan) {

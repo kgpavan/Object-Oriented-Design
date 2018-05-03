@@ -1,6 +1,7 @@
-package design.design_patterns.command.JobHandler;
+
 
 public class EmailJob implements Job {
+
 
     private Email email;
 

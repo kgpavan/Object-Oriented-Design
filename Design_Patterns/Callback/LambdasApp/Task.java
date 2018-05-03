@@ -1,8 +1,5 @@
-
 /**
- * 
  * Template-method class for callback hook execution
- * 
  */
 public abstract class Task {
 

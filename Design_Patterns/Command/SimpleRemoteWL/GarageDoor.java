@@ -1,5 +1,6 @@
 package design.design_patterns.command.simpleremoteWL;
 
+
 public class GarageDoor {
 
     public GarageDoor() {

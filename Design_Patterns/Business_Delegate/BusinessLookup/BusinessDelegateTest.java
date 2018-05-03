@@ -1,10 +1,11 @@
-
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 import org.junit.Before;
 import org.junit.Test;
+
+
 
 /**
  * The Business Delegate pattern adds an abstraction layer between the presentation and business
@@ -18,60 +19,61 @@ import org.junit.Test;
  */
 public class BusinessDelegateTest {
 
-  private EjbService ejbService;
 
-  private JmsService jmsService;
+    private EjbService ejbService;
 
-  private BusinessLookup businessLookup;
+    private JmsService jmsService;
 
-  private BusinessDelegate businessDelegate;
+    private BusinessLookup businessLookup;
 
-  /**
-   * This method sets up the instance variables of this test class. It is executed before the
-   * execution of every test.
-   */
-  @Before
-  public void setup() {
-    ejbService = spy(new EjbService());
-    jmsService = spy(new JmsService());
+    private BusinessDelegate businessDelegate;
 
-    businessLookup = spy(new BusinessLookup());
-    businessLookup.setEjbService(ejbService);
-    businessLookup.setJmsService(jmsService);
+    /**
+     * This method sets up the instance variables of this test class. It is executed before the
+     * execution of every test.
+     */
+    @Before
+    public void setup() {
+      ejbService = spy(new EjbService());
+      jmsService = spy(new JmsService());
 
-    businessDelegate = spy(new BusinessDelegate());
-    businessDelegate.setLookupService(businessLookup);
-  }
+      businessLookup = spy(new BusinessLookup());
+      businessLookup.setEjbService(ejbService);
+      businessLookup.setJmsService(jmsService);
 
-  /**
-   * In this example the client ({@link Client}) utilizes a business delegate (
-   * {@link BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
-   * service and makes the service call.
-   */
-  @Test
-  public void testBusinessDelegate() {
+      businessDelegate = spy(new BusinessDelegate());
+      businessDelegate.setLookupService(businessLookup);
+    }
 
-    // setup a client object
-    Client client = new Client(businessDelegate);
+    /**
+     * In this example the client ({@link Client}) utilizes a business delegate (
+     * {@link BusinessDelegate}) to execute a task. The Business Delegate then selects the appropriate
+     * service and makes the service call.
+     */
+    @Test
+    public void testBusinessDelegate() {
 
-    // set the service type
-    businessDelegate.setServiceType(ServiceType.EJB);
+      // setup a client object
+      Client client = new Client(businessDelegate);
 
-    // action
-    client.doTask();
+      // set the service type
+      businessDelegate.setServiceType(ServiceType.EJB);
 
-    // verifying that the businessDelegate was used by client during doTask() method.
-    verify(businessDelegate).doTask();
-    verify(ejbService).doProcessing();
+      // action
+      client.doTask();
 
-    // set the service type
-    businessDelegate.setServiceType(ServiceType.JMS);
+      // verifying that the businessDelegate was used by client during doTask() method.
+      verify(businessDelegate).doTask();
+      verify(ejbService).doProcessing();
 
-    // action
-    client.doTask();
+      // set the service type
+      businessDelegate.setServiceType(ServiceType.JMS);
 
-    // verifying that the businessDelegate was used by client during doTask() method.
-    verify(businessDelegate, times(2)).doTask();
-    verify(jmsService).doProcessing();
-  }
+      // action
+      client.doTask();
+
+      // verifying that the businessDelegate was used by client during doTask() method.
+      verify(businessDelegate, times(2)).doTask();
+      verify(jmsService).doProcessing();
+    }
 }

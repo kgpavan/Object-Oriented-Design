@@ -1,16 +1,6 @@
----
-layout: pattern
-title: EIP Wire Tap
-folder: eip-wire-tap
-permalink: /patterns/eip-wire-tap/
-categories: Enterprise integration
-tags:
- - Java
- - Difficulty-Intermittent
- - Enterprise integration
----
 
 ## Intent
+——————————————————————
 In most integration cases there is a need to monitor the messages flowing through the system. It is usually achieved
 by intercepting the message and redirecting it to a different location like console, filesystem or the database.
 It is important that such functionality should not modify the original message and influence the processing path.

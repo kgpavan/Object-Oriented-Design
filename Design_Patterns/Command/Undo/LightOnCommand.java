@@ -1,5 +1,6 @@
 package design.design_patterns.command.undo;
 
+
 public class LightOnCommand implements Command {
 
     Light light;

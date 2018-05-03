@@ -1,8 +1,9 @@
 package design.design_patterns.command.simpleremoteWL;
 
-//
-// This is the invoker
-//
+
+/*
+* This is the invoker
+*/ 
 public class SimpleRemoteControl {
 
     Command slot;

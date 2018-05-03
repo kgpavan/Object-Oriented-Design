@@ -1,16 +1,6 @@
----
-layout: pattern
-title: Event Queue
-folder: event-queue
-permalink: /patterns/event-queue/
-categories: Concurrency
-tags:
- - Java
- - Difficulty Intermediate
- - Queue
----
 
 ## Intent
+——————————————————————
 Event Queue is a good pattern if You have a limited accessibility resource (for example: 
 Audio or Database), but You need to handle all the requests that want to use that.
 It puts all the requests in a queue and process them asynchronously.
