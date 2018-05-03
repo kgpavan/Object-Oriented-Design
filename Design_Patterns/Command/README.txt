@@ -58,21 +58,20 @@ Receiver: Knows how to perform the operations associated with carrying out a req
 
 
 
-Participants
+## Participants
+———————————————
 
-    The classes and objects participating in this pattern are:
+The classes and objects participating in this pattern are:
 
-Command  (Command)
-declares an interface for executing an operation
-ConcreteCommand  (CalculatorCommand)
-defines a binding between a Receiver object and an action
-implements Execute by invoking the corresponding operation(s) on Receiver
-Client  (CommandApp)
-creates a ConcreteCommand object and sets its receiver
-Invoker  (User)
-asks the command to carry out the request
-Receiver  (Calculator)
-knows how to perform the operations associated with carrying out the request.
+	#Command (Command): declares an interface for executing an operation
+
+	#ConcreteCommand  (CalculatorCommand): defines a binding between a Receiver object and an action implements Execute by invoking the corresponding operation(s) on Receiver
+
+	#Client  (CommandApp): creates a ConcreteCommand object and sets its receiver
+
+	#Invoker (User): asks the command to carry out the request
+
+	#Receiver (Calculator): knows how to perform the operations associated with carrying out the request.
 
 
 

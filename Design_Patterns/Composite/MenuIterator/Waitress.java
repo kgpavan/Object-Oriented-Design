@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 public class Waitress {
 
+
     public MenuComponent allMenus;
 
     public Waitress(MenuComponent allMenus) {

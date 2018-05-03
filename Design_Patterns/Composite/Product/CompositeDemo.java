@@ -7,6 +7,7 @@ import java.util.*;
  */
 
 abstract class Entity {
+    
     protected static StringBuffer indent = new StringBuffer();
     protected static int level = 1;
 
@@ -23,7 +24,9 @@ abstract class Entity {
 }
 
 class Product extends Entity {
+
     private int value;
+    
     public Product(int value) {
         this.value = value;
     }

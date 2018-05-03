@@ -7,8 +7,11 @@ public class MenuItem extends MenuComponent {
 
 
     String name;
+
     String description;
+
     boolean vegetarian;
+
     double price;
 
     public MenuItem(String name,
@@ -49,6 +52,5 @@ public class MenuItem extends MenuComponent {
         System.out.println(", " + getPrice());
         System.out.println("     -- " + getDescription());
     }
-
 }
 

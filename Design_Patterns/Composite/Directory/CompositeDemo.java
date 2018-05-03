@@ -1,4 +1,3 @@
-package com.sourcemaking.composite.first_example.after;
 
 import java.util.ArrayList;
 
