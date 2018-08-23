@@ -8,7 +8,3 @@ Use the Data Access Object in any of the following situations
 
 * when you want to consolidate how the data layer is accessed
 * when you want to avoid writing multiple data retrieval/persistence layers
-
-## Credits
-
-* [J2EE Design Patterns](http://www.amazon.com/J2EE-Design-Patterns-William-Crawford/dp/0596004273/ref=sr_1_2)
